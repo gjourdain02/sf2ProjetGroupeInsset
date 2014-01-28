@@ -1,0 +1,76 @@
+<?php
+
+namespace Acme\UserBundle\Entity;
+
+use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="op_bancaire")
+ */
+class OperationBancaire
+{
+    /**
+     * @var Id
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    public function __construct()
+    {
+
+    }
+
+    /**
+     * @var Nom
+     * @ORM\Column(type="string")
+     */
+    protected $nom;
+
+    /**
+     * @var Compte
+     * @ORM\ManyToOne(targetEntity="Compte")
+     **/
+    protected $compte;
+
+    /**
+     * @var Categorie
+     * @ORM\ManyToOne(targetEntity="Categorie")
+     **/
+    protected $categorie;
+
+    /**
+     * @var DateOperation
+     * @ORM\Column(type="datetime")
+     */
+    protected $dateOperation;
+
+    /**
+     * @var Type
+     * @ORM\Column(type="integer")
+     */
+    protected $type;
+
+    /**
+     * @var Montant
+     * @ORM\Column(type="decimal")
+     */
+    protected $montant;
+
+    /**
+     * @var Verif
+     * @ORM\Column(type="integer")
+     */
+    protected $verif;
+
+    /**
+     * @var OperationPeriodique
+     * @ORM\ManyToOne(targetEntity="OperationPeriodique", inversedBy="operationBancaire")
+     * @ORM\JoinColumn(name="op_periodique_id", referencedColumnName="id")
+     **/
+    protected $operationPeriodique;
+
+}

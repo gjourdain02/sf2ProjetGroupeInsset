@@ -1,0 +1,64 @@
+<?php
+
+namespace Acme\UserBundle\Entity;
+
+use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="op_periodique")
+ */
+class OperationPeriodique
+{
+    /**
+     * @var Id
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    public function __construct()
+    {
+        $this->features = new ArrayCollection();
+    }
+
+    /**
+     * @var Nom
+     * @ORM\Column(type="string")
+     */
+    protected $nom;
+
+    /**
+     * @var Date
+     * @ORM\Column(type="date")
+     */
+    protected $date;
+
+    /**
+     * @var Compte
+     * @ORM\ManyToOne(targetEntity="Compte")
+     **/
+    protected $compte;
+
+    /**
+     * @var Type
+     * @ORM\Column(type="integer", length=1)
+     */
+    protected $type;
+
+    /**
+     * @var Montant
+     * @ORM\Column(type="decimal")
+     */
+    protected $montant;
+
+    /**
+     * @var OperationBancaire
+     * @ORM\OneToMany(targetEntity="OperationBancaire", mappedBy="operationPeriodique")
+     **/
+    protected $operationBancaire;
+}

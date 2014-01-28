@@ -1,0 +1,45 @@
+<?php
+
+namespace Acme\UserBundle\Entity;
+
+use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="dump")
+ */
+class Dump
+{
+    /**
+     * @var Id
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    public function __construct()
+    {
+
+    }
+
+    /**
+     * @var Nom
+     * @ORM\Column(type="string")
+     */
+    protected $nom;
+
+    /**
+     * @var DateAjout
+     * @ORM\Column(type="datetime")
+     */
+    protected $dateAjout;
+
+    /**
+     * @var User
+     * @ORM\ManyToOne(targetEntity="User")
+     **/
+    protected $user;
+
+}

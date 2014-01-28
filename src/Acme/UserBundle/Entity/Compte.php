@@ -1,0 +1,125 @@
+<?php
+
+namespace Acme\UserBundle\Entity;
+
+use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="cpt_bancaire")
+ */
+class Compte
+{
+    /**
+     * @var Id
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    public function __construct()
+    {
+
+    }
+
+    /**
+     * @var Nom
+     * @ORM\Column(type="string")
+     */
+    protected $nom;
+
+    /**
+     * @var NumeroCompte
+     * @ORM\Column(type="string")
+     */
+    protected $numeroCompte;
+
+    /**
+     * @var User
+     * @ORM\ManyToOne(targetEntity="User")
+     **/
+    protected $user;
+
+    
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     * @return Compte
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string 
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set numeroCompte
+     *
+     * @param string $numeroCompte
+     * @return Compte
+     */
+    public function setNumeroCompte($numeroCompte)
+    {
+        $this->numeroCompte = $numeroCompte;
+
+        return $this;
+    }
+
+    /**
+     * Get numeroCompte
+     *
+     * @return string 
+     */
+    public function getNumeroCompte()
+    {
+        return $this->numeroCompte;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \Acme\UserBundle\Entity\User $user
+     * @return Compte
+     */
+    public function setUser(\Acme\UserBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \Acme\UserBundle\Entity\User 
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+}

@@ -1,0 +1,33 @@
+<?php
+
+namespace Acme\UserBundle\Entity;
+
+use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="categorie")
+ */
+class Categorie
+{
+    /**
+     * @var Id
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    public function __construct()
+    {
+
+    }
+
+    /**
+     * @var Nom
+     * @ORM\Column(type="string")
+     */
+    protected $nom;
+
+}

@@ -1,0 +1,39 @@
+<?php
+
+namespace Acme\UserBundle\Entity;
+
+use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="seuil")
+ */
+class Seuil
+{
+    /**
+     * @var Id
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    public function __construct()
+    {
+    }
+
+    /**
+     * @var Seuil
+     * @ORM\Column(type="decimal")
+     */
+    protected $seuil;
+
+    /**
+     * @var Compte
+     * @ORM\ManyToOne(targetEntity="Compte")
+     **/
+    protected $compte;
+
+}
