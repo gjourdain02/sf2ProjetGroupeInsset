@@ -35,3 +35,7 @@ e08086,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/register/,1390918
 29ec2e,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/register/confirmed,1390918029,
 59cd2f,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/admin/,1390918116,f1e5db
 f1e5db,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/admin/,1390918116,
+c880be,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/profile,1390990603,
+fe4826,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/profile,1390990603,
+9d3e0d,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/profile/,1390990605,
+1ab193,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/login,1390990608,
