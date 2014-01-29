@@ -60,4 +60,8 @@ class CompteController extends Controller
         $em->remove($compte);
         $em->flush();
     }
+
+    public function modifAction($id){
+
+    }
 }
