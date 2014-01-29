@@ -5,6 +5,10 @@ namespace Acme\UserBundle\Entity;
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
+use Symfony\Component\Validator\Mapping\ClassMetadata;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\Constraints\NotBlank;
+
 /**
  * @ORM\Entity
  * @ORM\Table(name="cpt_bancaire")
@@ -121,5 +125,20 @@ class Compte
     public function getUser()
     {
         return $this->user;
+    }
+
+    public static function loadValidatorMetadata(ClassMetadata $metadata)
+    {
+        $metadata->addPropertyConstraint('nom', new NotBlank());
+        $metadata->addPropertyConstraint('nom', new Assert\Regex(array(
+            'pattern' => '/^[a-zA-z0-9]+/',
+            'message' => 'Le champ ne peut contenir que des caractères alphanumeriques',
+        )));
+
+        $metadata->addPropertyConstraint('numeroCompte', new NotBlank());
+        $metadata->addPropertyConstraint('numeroCompte', new Assert\Regex(array(
+            'pattern' => '/^[a-zA-z0-9]+/',
+            'message' => 'Le champ ne peut contenir que des caractères alphanumeriques',
+        )));
     }
 }
