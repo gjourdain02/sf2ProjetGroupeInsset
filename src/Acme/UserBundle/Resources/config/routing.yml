@@ -1,3 +1,7 @@
 creerCompte:
     pattern:  /tester
     defaults: { _controller: UserBundle:Compte:creer }
+
+supprCompte:
+    pattern: /tester/suppr/{id}
+    defaults: {_controller: UserBundle:Compte:suppr}
