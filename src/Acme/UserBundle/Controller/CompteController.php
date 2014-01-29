@@ -41,7 +41,7 @@ class CompteController extends Controller
             'UserBundle:Default:index.html.twig',
             array('name' => $name)
         );
-        //return new Response('<html><body>Hello '.$name.'!</body></html>');*/
+        /return new Response('<html><body>Hello '.$name.'!</body></html>');*/
     }
 
     public function supprAction($id)
