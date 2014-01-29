@@ -8,9 +8,9 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Symfony\Component\Validator\Constraints as Assert;
 
-class DefaultController extends Controller
+class CompteController extends Controller
 {
-    public function indexAction(Request $request)
+    public function creerAction(Request $request)
     {
         // crée une tâche et lui donne quelques données par défaut pour cet exemple
         $compte = new Compte();
