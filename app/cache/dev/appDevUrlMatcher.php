@@ -343,9 +343,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // creerCompte
-        if ($pathinfo === '/tester') {
-            return array (  '_controller' => 'Acme\\UserBundle\\Controller\\CompteController::creerAction',  '_route' => 'creerCompte',);
+        if (0 === strpos($pathinfo, '/tester')) {
+            // creerCompte
+            if ($pathinfo === '/tester') {
+                return array (  '_controller' => 'Acme\\UserBundle\\Controller\\CompteController::creerAction',  '_route' => 'creerCompte',);
+            }
+
+            // supprCompte
+            if (0 === strpos($pathinfo, '/tester/suppr') && preg_match('#^/tester/suppr/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'supprCompte')), array (  '_controller' => 'Acme\\UserBundle\\Controller\\CompteController::supprAction',));
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

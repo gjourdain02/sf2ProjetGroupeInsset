@@ -79,3 +79,9 @@ caeae0,127.0.0.1,POST,http://macsf2projetgroupe.dev/app_dev.php/tester,139100710
 af75ac,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester,1391007519,466cdd
 466cdd,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester,1391007519,
 8fa6c2,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester,1391007547,
+d99aad,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester/suppr/1,1391009458,2ad8bc
+2ad8bc,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester/suppr/1,1391009458,
+6a8a65,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester/suppr/1,1391009497,6f8ab4
+6f8ab4,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester/suppr/1,1391009497,
+755d35,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester/suppr/1,1391009517,a4be62
+a4be62,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester/suppr/1,1391009517,

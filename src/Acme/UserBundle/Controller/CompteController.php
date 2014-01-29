@@ -50,12 +50,13 @@ class CompteController extends Controller
             ->getRepository('UserBundle:Compte')
             ->find($id);
 
-        if (!$product)
+        if (!$compte)
         {
             throw $this->createNotFoundException(
                 'Aucun produit trouvé pour cet id : '.$id
             );
         }
+        $em = $this->getDoctrine()->getManager();
         $em->remove($compte);
         $em->flush();
     }
