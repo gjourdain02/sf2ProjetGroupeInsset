@@ -343,9 +343,9 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // helloPage
+        // creerCompte
         if ($pathinfo === '/tester') {
-            return array (  '_controller' => 'Acme\\UserBundle\\Controller\\DefaultController::indexAction',  '_route' => 'helloPage',);
+            return array (  '_controller' => 'Acme\\UserBundle\\Controller\\CompteController::creerAction',  '_route' => 'creerCompte',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

@@ -34,7 +34,7 @@ class CompteController extends Controller
             $em->flush();
             return $this->redirect($this->generateUrl('task_success'));
         }
-        return $this->render('UserBundle:Default:index.html.twig', array(
+        return $this->render('UserBundle:Compte:creer.html.twig', array(
             'form' => $form->createView(),
         ));
         /*return $this->render(
