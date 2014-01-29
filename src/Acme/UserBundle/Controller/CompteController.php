@@ -43,4 +43,20 @@ class CompteController extends Controller
         );
         //return new Response('<html><body>Hello '.$name.'!</body></html>');*/
     }
+
+    public function supprAction($id)
+    {
+        $compte = $this->getDoctrine()
+            ->getRepository('UserBundle:Compte')
+            ->find($id);
+
+        if (!$product)
+        {
+            throw $this->createNotFoundException(
+                'Aucun produit trouvé pour cet id : '.$id
+            );
+        }
+        $em->remove($compte);
+        $em->flush();
+    }
 }
