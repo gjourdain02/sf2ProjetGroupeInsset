@@ -8,6 +8,9 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Symfony\Component\Validator\Constraints as Assert;
 
+use Acme\UserBundle\Form\Type\CompteType;
+
+
 class CompteController extends Controller
 {
     public function creerAction(Request $request)
@@ -18,11 +21,7 @@ class CompteController extends Controller
         $compte->setUser($user);
 
 
-        $form = $this->createFormBuilder($compte)
-            ->add('nom', 'text')
-            ->add('numeroCompte', 'text')
-            ->add('save', 'submit')
-            ->getForm();
+        $form = $this->createForm(new CompteType(), $compte);
 
         $form->handleRequest($request);
 

@@ -52,7 +52,7 @@ class OperationPeriodique
 
     /**
      * @var Montant
-     * @ORM\Column(type="decimal")
+     * @ORM\Column(type="decimal", precision=5, scale=5)
      */
     protected $montant;
 

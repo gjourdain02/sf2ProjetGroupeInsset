@@ -4,8 +4,8 @@ parameters:
     database_host: localhost
     database_port: null
     database_name: sf2projetgroupe
-    database_user: root
-    database_password: iameno
+    database_user: sf2projetgroupe
+    database_password: azerty
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null
