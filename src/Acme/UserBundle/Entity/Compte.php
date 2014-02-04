@@ -47,10 +47,10 @@ class Compte
     protected $user;
 
     /**
-     * @var Montant
-     * @ORM\Column(type="decimal", precision=5, scale=5)
+     * @var Actif
+     * @ORM\Column(type="integer")
      */
-    protected $montant;
+    protected $actif;
 
     /**
      * Get id
@@ -60,6 +60,29 @@ class Compte
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Get actif
+     *
+     * @return integer 
+     */
+    public function getActif()
+    {
+        return $this->actif;
+    }
+
+    /**
+     * Set actif
+     *
+     * @param integer $actif
+     * @return Compte
+     */
+    public function setActif($actif)
+    {
+        $this->actif = $actif;
+
+        return $this;
     }
 
     /**

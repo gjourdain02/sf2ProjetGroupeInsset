@@ -26,10 +26,39 @@ class User extends BaseUser
     }
     /**
      * @ORM\ManyToMany(targetEntity="Acme\UserBundle\Entity\Group")
-     * @ORM\JoinTable(name="fos_user_user_group",
+     * @ORM\JoinTable(name="fos_user_group",
      *      joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
      *      inverseJoinColumns={@ORM\JoinColumn(name="group_id", referencedColumnName="id")}
      * )
      */
     protected $groups;
+
+    /**
+     * @var Actif
+     * @ORM\Column(type="integer")
+     */
+    protected $actif;
+
+    /**
+     * Get actif
+     *
+     * @return integer 
+     */
+    public function getActif()
+    {
+        return $this->actif;
+    }
+
+    /**
+     * Set actif
+     *
+     * @param integer $actif
+     * @return Compte
+     */
+    public function setActif($actif)
+    {
+        $this->actif = $actif;
+
+        return $this;
+    }
 }
