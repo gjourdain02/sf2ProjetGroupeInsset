@@ -43,6 +43,44 @@ class CompteController extends Controller
         /return new Response('<html><body>Hello '.$name.'!</body></html>');*/
     }
 
+    public function modifAction($id){
+        $compte = $this->getDoctrine()
+            ->getRepository('UserBundle:Compte')
+            ->find($id);
+
+
+        if (!$compte)
+        {
+            throw $this->createNotFoundException(
+                'Aucun produit trouvé pour cet id : '.$id
+            );
+        }
+
+        $form = $this->createForm(new CompteType(), $compte);
+
+
+        $request = $this->get('request');
+        if ($request->getMethod() == 'POST')
+        {
+            $form->bind($request);
+
+            if ($form->isValid())
+            {
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($compte);
+                $em->flush();
+
+                return $this->redirect($this->generateUrl('task_success'));
+            }
+
+
+        }
+
+        return $this->render('UserBundle:Compte:modif.html.twig', array(
+            'form' => $form->createView(),
+        ));
+    }
+
     public function supprAction($id)
     {
         $compte = $this->getDoctrine()
