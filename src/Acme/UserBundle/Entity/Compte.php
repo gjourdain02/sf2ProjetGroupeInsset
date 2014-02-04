@@ -154,29 +154,6 @@ class Compte
         return $this->user;
     }
 
-    /**
-     * Set montant
-     *
-     * @param string $montant
-     * @return Compte
-     */
-    public function setMontant($montant)
-    {
-        $this->montant = $montant;
-
-        return $this;
-    }
-
-    /**
-     * Get montant
-     *
-     * @return string 
-     */
-    public function getMontant()
-    {
-        return $this->montant;
-    }
-
     public static function loadValidatorMetadata(ClassMetadata $metadata)
     {
         $metadata->addPropertyConstraint('nom', new NotBlank());
@@ -189,12 +166,6 @@ class Compte
         $metadata->addPropertyConstraint('numeroCompte', new Assert\Regex(array(
             'pattern' => '/^[a-zA-z0-9]+/',
             'message' => 'Le champ ne peut contenir que des caractères alphanumeriques',
-        )));
-
-        $metadata->addPropertyConstraint('montant', new NotBlank());
-        $metadata->addPropertyConstraint('montant', new Assert\Regex(array(
-            'pattern' => '/^[0-9.,]+/',
-            'message' => 'Le champ ne peut contenir que des caractères chiffres',
         )));
     }
 }

@@ -349,6 +349,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'Acme\\UserBundle\\Controller\\CompteController::creerAction',  '_route' => 'creerCompte',);
             }
 
+            // modifCompte
+            if (0 === strpos($pathinfo, '/tester/modif') && preg_match('#^/tester/modif/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'modifCompte')), array (  '_controller' => 'Acme\\UserBundle\\Controller\\CompteController::modifAction',));
+            }
+
             // supprCompte
             if (0 === strpos($pathinfo, '/tester/suppr') && preg_match('#^/tester/suppr/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'supprCompte')), array (  '_controller' => 'Acme\\UserBundle\\Controller\\CompteController::supprAction',));

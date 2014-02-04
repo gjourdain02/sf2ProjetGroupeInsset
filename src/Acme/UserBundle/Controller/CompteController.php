@@ -17,6 +17,7 @@ class CompteController extends Controller
     {
         // crée une tâche et lui donne quelques données par défaut pour cet exemple
         $compte = new Compte();
+        $compte->setActif('1');
         $user = $this->container->get('security.context')->getToken()->getUser();
         $compte->setUser($user);
 
@@ -76,7 +77,7 @@ class CompteController extends Controller
 
         }
 
-        return $this->render('UserBundle:Compte:modif.html.twig', array(
+        return $this->render('UserBundle:Compte:creer.html.twig', array(
             'form' => $form->createView(),
         ));
     }
@@ -96,9 +97,5 @@ class CompteController extends Controller
         $em = $this->getDoctrine()->getManager();
         $em->remove($compte);
         $em->flush();
-    }
-
-    public function modifAction($id){
-
     }
 }

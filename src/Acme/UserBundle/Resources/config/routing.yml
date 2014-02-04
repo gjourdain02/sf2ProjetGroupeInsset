@@ -2,6 +2,10 @@ creerCompte:
     pattern:  /tester
     defaults: { _controller: UserBundle:Compte:creer }
 
+modifCompte:
+    pattern: /tester/modif/{id}
+    defaults: {_controller: UserBundle:Compte:modif}
+
 supprCompte:
     pattern: /tester/suppr/{id}
     defaults: {_controller: UserBundle:Compte:suppr}

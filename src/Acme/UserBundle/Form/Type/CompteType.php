@@ -13,7 +13,6 @@ class CompteType extends AbstractType{
         $builder
             ->add('nom', 'text')
             ->add('numeroCompte', 'text')
-            ->add('montant', 'text')
             ->add('save', 'submit');
     }
 
