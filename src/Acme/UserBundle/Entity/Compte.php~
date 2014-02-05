@@ -47,6 +47,6 @@ class Compte
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    protected $actif;
+    protected $actif = 1;
     
 }
