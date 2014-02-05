@@ -48,7 +48,7 @@ class Compte
 
     /**
      * @var Actif
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="boolean")
      */
     protected $actif = 1;
 

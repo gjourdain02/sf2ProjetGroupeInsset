@@ -23,6 +23,7 @@ class CompteController extends Controller
 
 
         $form = $this->createForm(new CompteType(), $compte);
+        $form->add('save', 'submit');
 
         $form->handleRequest($request);
 
@@ -58,6 +59,11 @@ class CompteController extends Controller
         }
 
         $form = $this->createForm(new CompteType(), $compte);
+        $form->add('actif', 'checkbox', array(
+            'label'     => 'Activez ',
+            'required'  => false,
+        ) )
+            ->add('save', 'submit');
 
 
         $request = $this->get('request');
