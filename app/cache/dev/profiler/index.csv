@@ -157,3 +157,15 @@ aa8109,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester/modif/1,13
 8bf2a7,127.0.0.1,POST,http://macsf2projetgroupe.dev/app_dev.php/tester/modif/1,1391526294,
 36aed3,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester,1391613121,c65cea
 c65cea,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester,1391613121,
+0a4151,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester,1391616681,379efe
+379efe,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester,1391616681,
+5a87a4,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/register,1391616687,
+64ba5e,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/register/,1391616692,
+1597c9,127.0.0.1,POST,http://macsf2projetgroupe.dev/app_dev.php/register/,1391616744,
+671359,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/register/confirmed,1391616747,
+cb720f,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester,1391616824,
+6dd243,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester/,1391616830,31193c
+31193c,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester/,1391616830,
+6e841c,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester,1391616859,efdc1a
+efdc1a,127.0.0.1,POST,http://macsf2projetgroupe.dev/app_dev.php/tester,1391616859,
+a0f911,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/tester,1391617951,
