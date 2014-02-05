@@ -50,7 +50,7 @@ class Compte
      * @var Actif
      * @ORM\Column(type="integer")
      */
-    protected $actif;
+    protected $actif = 1;
 
     /**
      * Get id

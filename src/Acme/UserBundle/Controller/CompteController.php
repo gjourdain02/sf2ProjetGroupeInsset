@@ -98,4 +98,5 @@ class CompteController extends Controller
         $em->remove($compte);
         $em->flush();
     }
+
 }
