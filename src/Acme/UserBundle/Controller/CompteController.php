@@ -3,12 +3,12 @@
 namespace Acme\UserBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Acme\UserBundle\Entity\Compte;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Symfony\Component\Validator\Constraints as Assert;
 
 use Acme\UserBundle\Form\Type\CompteType;
+use Acme\UserBundle\Entity\Compte;
 
 
 class CompteController extends Controller
@@ -31,9 +31,11 @@ class CompteController extends Controller
             // fait quelque chose comme sauvegarder la tâche dans la bdd
             $em = $this->getDoctrine()->getManager();
             $reg = $form->getData();
+            var_dump($form);
+            die();
             $em->persist($reg);
             $em->flush();
-            return $this->redirect($this->generateUrl('task_success'));
+            return $this->redirect($this->generateUrl('creerOperation'));
         }
         return $this->render('UserBundle:Compte:creer.html.twig', array(
             'form' => $form->createView(),

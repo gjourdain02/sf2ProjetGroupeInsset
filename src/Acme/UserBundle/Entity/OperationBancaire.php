@@ -4,6 +4,10 @@ namespace Acme\UserBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+
+use Acme\UserBundle\Entity\Categorie;
+
 
 /**
  * @ORM\Entity
@@ -21,7 +25,7 @@ class OperationBancaire
 
     public function __construct()
     {
-
+        $this->categories   = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -38,9 +42,9 @@ class OperationBancaire
 
     /**
      * @var Categorie
-     * @ORM\ManyToOne(targetEntity="Categorie")
+     * @ORM\ManyToMany(targetEntity="Categorie")
      **/
-    protected $categorie;
+    protected $categories;
 
     /**
      * @var DateOperation
@@ -223,26 +227,29 @@ class OperationBancaire
     }
 
     /**
-     * Set categorie
-     *
-     * @param \Acme\UserBundle\Entity\Categorie $categorie
+     * @param Acme\UserBundle\Entity\Categorie $categorie
      * @return OperationBancaire
      */
-    public function setCategorie(\Acme\UserBundle\Entity\Categorie $categorie = null)
+    public function addCategorie(\Acme\UserBundle\Entity\Categorie $categorie)
     {
-        $this->categorie = $categorie;
-
+        $this->categories[] = $categorie;
         return $this;
     }
 
     /**
-     * Get categorie
-     *
-     * @return \Acme\UserBundle\Entity\Categorie 
+     * @param Acme\UserBundle\Entity\Categorie $categorie
      */
-    public function getCategorie()
+    public function removeCategorie(\Acme\UserBundle\Entity\Categorie $categorie)
     {
-        return $this->categorie;
+        $this->categories->removeElement($categorie);
+    }
+
+    /**
+     * @return Doctrine\Common\Collections\Collection
+     */
+    public function getCategories()
+    {
+        return $this->categories;
     }
 
     /**
