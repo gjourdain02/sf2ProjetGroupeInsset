@@ -335,3 +335,10 @@ a1e462,127.0.0.1,POST,http://macsf2projetgroupe.dev/app_dev.php/compte/creer,139
 b65e72,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/opbancaire/creer/5,1392207731,
 a520ee,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/opbancaire/creer/5,1392207739,4e2a83
 4e2a83,127.0.0.1,POST,http://macsf2projetgroupe.dev/app_dev.php/opbancaire/creer/5,1392207739,
+116cd7,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/logout,1392210170,
+5f5f45,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/,1392210172,5d42da
+5d42da,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/,1392210172,
+97be0e,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/login,1392210192,
+d66e79,127.0.0.1,POST,http://macsf2projetgroupe.dev/app_dev.php/login_check,1392210201,
+09d90a,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/,1392210202,796ffd
+796ffd,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/,1392210202,
