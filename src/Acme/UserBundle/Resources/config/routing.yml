@@ -1,11 +1,20 @@
 creerCompte:
-    pattern:  /tester
+    pattern:  /compte/creer
     defaults: { _controller: UserBundle:Compte:creer }
 
 modifCompte:
-    pattern: /tester/modif/{id}
+    pattern: /compte/modif/{id}
     defaults: {_controller: UserBundle:Compte:modif}
 
 supprCompte:
-    pattern: /tester/suppr/{id}
+    pattern: /compte/suppr/{id}
     defaults: {_controller: UserBundle:Compte:suppr}
+
+creerOperation:
+    pattern:  /opbancaire/creer/{id}
+    defaults: { _controller: UserBundle:OpBancaire:creer }
+
+
+supprOperation:
+    pattern:  /opbancaire/suppr/{id}
+    defaults: { _controller: UserBundle:OpBancaire:suppr }
