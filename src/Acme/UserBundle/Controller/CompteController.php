@@ -31,11 +31,10 @@ class CompteController extends Controller
             // fait quelque chose comme sauvegarder la tâche dans la bdd
             $em = $this->getDoctrine()->getManager();
             $reg = $form->getData();
-            var_dump($form);
-            die();
             $em->persist($reg);
             $em->flush();
-            return $this->redirect($this->generateUrl('creerOperation'));
+            $idCompte = $reg->getId();
+            return $this->redirect($this->generateUrl('creerOperation', array('id' => $idCompte)));
         }
         return $this->render('UserBundle:Compte:creer.html.twig', array(
             'form' => $form->createView(),

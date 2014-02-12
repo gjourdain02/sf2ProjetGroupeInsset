@@ -10,6 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Acme\UserBundle\Form\Type\OpBancaireType;
 use Acme\UserBundle\Entity\Compte;
 use Acme\UserBundle\Entity\OperationBancaire;
+use Acme\UserBundle\Entity\OperationPeriodique;
 
 
 class OpBancaireController extends Controller
@@ -23,6 +24,9 @@ class OpBancaireController extends Controller
         $compte = $repository->findOneById($id);
 
         $OpBancaire = new OperationBancaire();
+        $opPeriodique = new OperationPeriodique();
+        //$opPeriodique->setId(0);
+
 
         $form = $this->createForm(new OpBancaireType(), $OpBancaire);
         $form->add('save', 'submit');
@@ -33,12 +37,16 @@ class OpBancaireController extends Controller
                 // fait quelque chose comme sauvegarder la tâche dans la bdd
                 $em = $this->getDoctrine()->getManager();
                 $reg = $form->getData();
-                //$reg->setDateOperation(new \DateTime());
-                var_dump($form);
-                die();
+                $reg->setDateOperation(new \DateTime());
+                $reg->setType(1);
+                $reg->setCompte($compte);
+                $reg->setVerif(1);
+
+                // var_dump($reg);
+                // die();
                 $em->persist($reg);
                 $em->flush();
-                return $this->redirect($this->generateUrl('creerOperation'));
+                return $this->redirect($this->generateUrl('task'));
             //}
         }
 
