@@ -13,3 +13,8 @@ supprCompte:
 creerOperation:
     pattern:  /opbancaire/creer/{id}
     defaults: { _controller: UserBundle:OpBancaire:creer }
+
+
+supprOperation:
+    pattern:  /opbancaire/suppr/{id}
+    defaults: { _controller: UserBundle:OpBancaire:suppr }
