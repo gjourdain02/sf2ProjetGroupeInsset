@@ -3604,6 +3604,18 @@ session_name($name);
 }
 }
 }
+namespace
+{
+interface SessionHandlerInterface
+{
+public function open($savePath, $sessionName);
+public function close();
+public function read($sessionId);
+public function write($sessionId, $data);
+public function destroy($sessionId);
+public function gc($lifetime);
+}
+}
 namespace Symfony\Component\HttpFoundation\Session\Storage\Proxy
 {
 class SessionHandlerProxy extends AbstractProxy implements \SessionHandlerInterface

@@ -1,4 +1,13 @@
 <<<<<<< HEAD
+8f1b30,127.0.0.1,GET,http://gitlin/app_dev.php/,1392028535,ef04b9
+ef04b9,127.0.0.1,GET,http://gitlin/app_dev.php/,1392028535,
+0cf441,127.0.0.1,GET,http://gitlin/app_dev.php/tester/,1392028538,f217cb
+f217cb,127.0.0.1,GET,http://gitlin/app_dev.php/tester/,1392028538,
+b083e2,127.0.0.1,GET,http://gitlin/app_dev.php/tester,1392028622,0b051a
+0b051a,127.0.0.1,GET,http://gitlin/app_dev.php/tester,1392028622,
+ddb95a,127.0.0.1,GET,http://gitlin/app_dev.php/login,1392028632,
+=======
+<<<<<<< HEAD
 755770,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/hello/antoine/,1391003083,e7c31e
 e7c31e,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/hello/antoine/,1391003083,
 9c9806,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/hello/antoine/,1391003250,4ed0fb
@@ -335,6 +344,7 @@ a1e462,127.0.0.1,POST,http://macsf2projetgroupe.dev/app_dev.php/compte/creer,139
 b65e72,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/opbancaire/creer/5,1392207731,
 a520ee,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/opbancaire/creer/5,1392207739,4e2a83
 4e2a83,127.0.0.1,POST,http://macsf2projetgroupe.dev/app_dev.php/opbancaire/creer/5,1392207739,
+<<<<<<< HEAD
 116cd7,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/logout,1392210170,
 5f5f45,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/,1392210172,5d42da
 5d42da,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/,1392210172,
@@ -342,3 +352,51 @@ a520ee,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/opbancaire/creer/
 d66e79,127.0.0.1,POST,http://macsf2projetgroupe.dev/app_dev.php/login_check,1392210201,
 09d90a,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/,1392210202,796ffd
 796ffd,127.0.0.1,GET,http://macsf2projetgroupe.dev/app_dev.php/,1392210202,
+=======
+>>>>>>> upstream/dev
+413f0f,127.0.0.1,GET,http://gitlin/app_dev.php/,1392209899,2dc275
+2dc275,127.0.0.1,GET,http://gitlin/app_dev.php/,1392209899,
+7ab880,127.0.0.1,GET,http://gitlin/app_dev.php/tester/,1392209905,333279
+333279,127.0.0.1,GET,http://gitlin/app_dev.php/tester/,1392209905,
+286991,127.0.0.1,GET,http://gitlin/app_dev.php/login,1392209911,
+7e9602,127.0.0.1,POST,http://gitlin/app_dev.php/login_check,1392209919,
+b36a63,127.0.0.1,GET,http://gitlin/app_dev.php/login,1392209919,
+4b65d3,127.0.0.1,POST,http://gitlin/app_dev.php/login_check,1392209929,
+adc311,127.0.0.1,GET,http://gitlin/app_dev.php/login,1392209930,
+ff1ed1,127.0.0.1,POST,http://gitlin/app_dev.php/login_check,1392209973,
+cb0386,127.0.0.1,GET,http://gitlin/app_dev.php/login,1392209973,
+ea39fc,127.0.0.1,GET,http://gitlin/app_dev.php/register,1392209981,
+4824c5,127.0.0.1,GET,http://gitlin/app_dev.php/register/,1392209982,
+4b8f9a,127.0.0.1,GET,http://gitlin/app_dev.php/register/,1392209994,739594
+739594,127.0.0.1,POST,http://gitlin/app_dev.php/register/,1392209994,
+6c127d,127.0.0.1,GET,http://gitlin/app_dev.php/login,1392210032,
+cef9ea,127.0.0.1,POST,http://gitlin/app_dev.php/login_check,1392210035,
+a966e5,127.0.0.1,GET,http://gitlin/app_dev.php/,1392210035,b5ad0f
+b5ad0f,127.0.0.1,GET,http://gitlin/app_dev.php/,1392210035,
+7a903c,127.0.0.1,GET,http://gitlin/app_dev.php/login,1392210046,
+0bebd5,127.0.0.1,GET,http://gitlin/app_dev.php/tester/,1392210057,f3af2c
+f3af2c,127.0.0.1,GET,http://gitlin/app_dev.php/tester/,1392210057,
+f814f6,127.0.0.1,GET,http://gitlin/app_dev.php/tester/modif/1,1392210070,35b97b
+35b97b,127.0.0.1,GET,http://gitlin/app_dev.php/tester/modif/1,1392210070,
+d72926,127.0.0.1,GET,http://gitlin/app_dev.php/login,1392210090,
+5225a2,127.0.0.1,GET,http://gitlin/app_dev.php/logout,1392210092,
+04ccc8,127.0.0.1,GET,http://gitlin/app_dev.php/,1392210092,a50036
+a50036,127.0.0.1,GET,http://gitlin/app_dev.php/,1392210092,
+e8ddff,127.0.0.1,GET,http://gitlin/app_dev.php/login,1392210095,
+53270f,127.0.0.1,POST,http://gitlin/app_dev.php/login_check,1392210100,
+439e8d,127.0.0.1,GET,http://gitlin/app_dev.php/,1392210100,c50c82
+c50c82,127.0.0.1,GET,http://gitlin/app_dev.php/,1392210100,
+0bb37a,127.0.0.1,GET,http://gitlin/app_dev.php/compte/creer,1392210113,
+3c9fdd,127.0.0.1,POST,http://gitlin/app_dev.php/compte/creer,1392210118,
+d0963a,127.0.0.1,GET,http://gitlin/app_dev.php/opbancaire/creer/3,1392210119,
+fea820,127.0.0.1,GET,http://gitlin/app_dev.php/compte/creer,1392210198,
+b87e87,127.0.0.1,GET,http://gitlin/app_dev.php/compte/creer,1392210199,
+020396,127.0.0.1,POST,http://gitlin/app_dev.php/compte/creer,1392210201,
+e1d2f4,127.0.0.1,GET,http://gitlin/app_dev.php/opbancaire/creer/4,1392210201,
+02e1d9,127.0.0.1,GET,http://gitlin/app_dev.php/opbancaire/creer/4,1392210219,5c6aa8
+5c6aa8,127.0.0.1,POST,http://gitlin/app_dev.php/opbancaire/creer/4,1392210219,
+f7f4d7,127.0.0.1,GET,http://gitlin/app_dev.php/opbancaire/creer/4,1392210267,980845
+980845,127.0.0.1,POST,http://gitlin/app_dev.php/opbancaire/creer/4,1392210267,
+e55203,127.0.0.1,GET,http://gitlin/app_dev.php/opbancaire/suppr/2,1392210390,187752
+187752,127.0.0.1,GET,http://gitlin/app_dev.php/opbancaire/suppr/2,1392210390,
+>>>>>>> 9dfc49cd8f57565b2184b2736bb27126e7079713

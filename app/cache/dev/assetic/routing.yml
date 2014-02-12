@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: /Users/antoine/Dropbox/Insset/symfony2/symfony2groupe/Symfony/app/config/routing_dev.yml
+    resource: /home/guiguinox/devWeb/sf2ProjetGroupeInsset/app/config/routing_dev.yml

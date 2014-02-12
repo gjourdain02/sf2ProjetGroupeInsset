@@ -54,4 +54,21 @@ class OpBancaireController extends Controller
             'form' => $form->createView(),
         ));
     }
+
+    public function supprAction($id)
+    {
+        $operation = $this->getDoctrine()
+            ->getRepository('UserBundle:OperationBancaire')
+            ->find($id);
+
+        if (!$operation)
+        {
+            throw $this->createNotFoundException(
+                'Aucun produit trouvé pour cet id : '.$id
+            );
+        }
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($operation);
+        $em->flush();
+    }
 }
