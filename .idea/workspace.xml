@@ -2,58 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d16deace-c041-4892-a649-650145aab83f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/08/51/7ed90c89084e052abc6eae204dd12374b102b017e9cf7a125714f4d22db7.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0f/3d/2c2f7f58402e8d2bb14fe1268a332560a384bfef906623ab7f8def98bce0.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/14/2e/0518e635b3d26470ddfea385106c039e5991be46ada70e21c53dbfad2676.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/35/8c/9729c663c68b376c7a7960e10054fb220e5c2b35795e7d37795152c3338f.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/40/34/d3a23c836e1595a9bad28d034536869494b7af69a75fa638b64eb12c5d55.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4b/c1/d043a3ce000bc84a2feee040b35846641801389447a722dc7bd397508cc1.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/56/85/a3a400637cbd9b398800aabeec36adaf6b532aa6808ee4fa49b06ff41287.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/56/a6/a164a68b329c7d7f58d7b0854d06788589d0c02a687e52641bf6f4779914.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/6c/a5/1c5d1c06d77c88d349edcbbfd4be82c258c3d887bcfceffabf05bac7d71b.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/82/dc/3cca06f20202155c7e0ff52693feb03f50c23aadc1959cfd9c84c4762ef4.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/88/80/12a55392106029eb0e0d277f3a0d7bd5150c7d5c86f86a707b99477b2b11.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/92/00/f10d0a9effb9e711c6de352f416f82b22e81bed8b47888a1abf38f05c349.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/93/31/5e0fd215d62367d6c2c53f21887adfc52d777156e88fa615b406a0d9bc0c.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/aa/dd/d207adac7a8faaa5f79f22dfac4dcff9542c3f8dc8a1f8bce1bb79362043.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c2/70/a1d9bc5dc344cb743d01eb7d9cf447dc9ed492c07752f010d5c1b0d81f9b.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c6/dd/30bfa3e773e3638383b0ba663f1a7b8286f70f5b5792332bfcfba8d53478.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d2/db/31026bfe6e1ab229d7146f493cf3a66017d11ffc4775ed8fc4b14398420e.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/dc/1e/fa3d8159102ba723955b6f63ba12b19ee55fe1f7665ddb8d692c170b01e6.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e7/cd/66a7e54f21c047f6df4fe539ac07e5e1509df28992abe56a76b8216e6851.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f0/96/3819e1fb99c8eaacd0c63191a165068b41578975722e7c9de87fe0d9ed3a.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/doctrineMONCUL/Compte.orm.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/doctrineMONCUL/Group.orm.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/doctrineMONCUL/User.orm.yml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/29/97/071c04b09edc8cd0f2aa3ade1c4ec193683a7d86689ba8d5f3bd159068f1.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/29/97/071c04b09edc8cd0f2aa3ade1c4ec193683a7d86689ba8d5f3bd159068f1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/57/cb/199f720201a82cbf7de82f0c0049403a63c1978e1950a1c14942db9e1c4c.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/57/cb/199f720201a82cbf7de82f0c0049403a63c1978e1950a1c14942db9e1c4c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4b/1b/3d01a42d6dc724fd6606966e911690a0b8e3fc60342fb1461ff90f3e091b.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/4b/1b/3d01a42d6dc724fd6606966e911690a0b8e3fc60342fb1461ff90f3e091b.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a4/ac/531a53229f351ac96ede3510ce299fa1f7d0dadbc09fda3a5fd19444fd23.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/a4/ac/531a53229f351ac96ede3510ce299fa1f7d0dadbc09fda3a5fd19444fd23.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/fe/46/91f311b82318556c56225373b23a5be00b20e563fafef99d076f443f90f9.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/fe/46/91f311b82318556c56225373b23a5be00b20e563fafef99d076f443f90f9.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Controller/CompteController.php" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Controller/CompteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Controller/OpBancaireController.php" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Controller/OpBancaireController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/82/c9/a4986d528513a939df1801434b53af5e61834d51b8ceb840741dca945843.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/82/c9/a4986d528513a939df1801434b53af5e61834d51b8ceb840741dca945843.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/classes.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/classes.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/classes.php" afterPath="$PROJECT_DIR$/app/cache/dev/classes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/creer.html.twig" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/creer.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/70/aa/df21b5ef4c08a2ec1a944d1d64182e686b1b5c9acd54f46cf0a29403a196.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/70/aa/df21b5ef4c08a2ec1a944d1d64182e686b1b5c9acd54f46cf0a29403a196.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c3/fb/e9728baab771f733a8ddb56621fe7996f5b60eca1634039d9ea1cbae94ca.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/c3/fb/e9728baab771f733a8ddb56621fe7996f5b60eca1634039d9ea1cbae94ca.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7e/f2/f0e54ba5da5a4efdf7584557794a6d29943aca71cc80961dceadf374c48a.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/7e/f2/f0e54ba5da5a4efdf7584557794a6d29943aca71cc80961dceadf374c48a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/44/b3/f6ab1d0105d1ed6bd90ffd4c40a7e63fab2947f26998a651cf844b73293a.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/44/b3/f6ab1d0105d1ed6bd90ffd4c40a7e63fab2947f26998a651cf844b73293a.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml" afterPath="$PROJECT_DIR$/app/config/parameters.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/prod.log" afterPath="$PROJECT_DIR$/app/logs/prod.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/assetic/routing.yml" afterPath="$PROJECT_DIR$/app/cache/dev/assetic/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sf2ProjetGroupeInsset.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,7 +45,25 @@
       <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="29" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="360">
+            <state line="7" column="29" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="creer.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/creer.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="6" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.62886596" vertical-offset="735" max-vertical-offset="1026">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="31" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="1145" max-vertical-offset="1476">
               <folding />
             </state>
           </provider>
@@ -139,19 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+      <file leaf-file-name="HelloWorldCommand.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme/DemoBundle/Command/HelloWorldCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="12" selection-start="473" selection-end="473" vertical-scroll-proportion="0.30975142" vertical-offset="108" max-vertical-offset="1080">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="65" selection-start="890" selection-end="890" vertical-scroll-proportion="-4.296296" vertical-offset="226" max-vertical-offset="774">
+            <state line="32" column="0" selection-start="953" selection-end="953" vertical-scroll-proportion="-5.3333335" vertical-offset="378" max-vertical-offset="918">
               <folding />
             </state>
           </provider>
@@ -181,9 +156,11 @@
         <option value="$PROJECT_DIR$/src/Acme/UserBundle/Entity/OperationBancaire.php" />
         <option value="$PROJECT_DIR$/src/Acme/UserBundle/Controller/OpBancaireController.php" />
         <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/creer.html.twig" />
       </list>
     </option>
   </component>
@@ -304,10 +281,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpBancaire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -338,6 +311,10 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Compte" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -362,118 +339,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sf2ProjetGroupeInsset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sf2ProjetGroupeInsset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Type" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sf2ProjetGroupeInsset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sf2ProjetGroupeInsset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sf2ProjetGroupeInsset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sf2ProjetGroupeInsset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DependencyInjection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sf2ProjetGroupeInsset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sf2ProjetGroupeInsset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -575,20 +440,26 @@
       <created>1391007923872</created>
       <updated>1391007923872</updated>
     </task>
+    <task id="LOCAL-00001" summary="Merge remote-tracking branch 'upstream/dev' into dev&#10;&#10;Conflicts:&#10;&#9;app/cache/dev/appDevDebugProjectContainer.php&#10;&#9;app/cache/dev/appDevDebugProjectContainer.php.meta&#10;&#9;app/cache/dev/appDevDebugProjectContainer.xml&#10;&#9;app/cache/dev/classes.php&#10;&#9;app/cache/dev/classes.php.meta&#10;&#9;app/cache/dev/profiler/index.csv&#10;&#9;app/cache/dev/twig/29/97/071c04b09edc8cd0f2aa3ade1c4ec193683a7d86689ba8d5f3bd159068f1.php&#10;&#9;app/cache/dev/twig/44/b3/f6ab1d0105d1ed6bd90ffd4c40a7e63fab2947f26998a651cf844b73293a.php&#10;&#9;app/cache/dev/twig/4b/1b/3d01a42d6dc724fd6606966e911690a0b8e3fc60342fb1461ff90f3e091b.php&#10;&#9;app/cache/dev/twig/57/cb/199f720201a82cbf7de82f0c0049403a63c1978e1950a1c14942db9e1c4c.php&#10;&#9;app/cache/dev/twig/70/aa/df21b5ef4c08a2ec1a944d1d64182e686b1b5c9acd54f46cf0a29403a196.php&#10;&#9;app/cache/dev/twig/7e/f2/f0e54ba5da5a4efdf7584557794a6d29943aca71cc80961dceadf374c48a.php&#10;&#9;app/cache/dev/twig/82/c9/a4986d528513a939df1801434b53af5e61834d51b8ceb840741dca945843.php&#10;&#9;app/cache/dev/twig/a4/ac/531a53229f351ac96ede3510ce299fa1f7d0dadbc09fda3a5fd19444fd23.php&#10;&#9;app/cache/dev/twig/c3/fb/e9728baab771f733a8ddb56621fe7996f5b60eca1634039d9ea1cbae94ca.php&#10;&#9;app/cache/dev/twig/fe/46/91f311b82318556c56225373b23a5be00b20e563fafef99d076f443f90f9.php&#10;&#9;app/logs/dev.log&#10;&#9;composer.json&#10;&#9;composer.lock&#10;&#9;vendor/autoload.php&#10;&#9;vendor/composer/autoload_real.php&#10;&#9;vendor/composer/installed.json&#10;">
+      <created>1392384162746</created>
+      <updated>1392384162746</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="24" width="1368" height="745" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3233831" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.275" sideWeight="0.82587063" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.275" sideWeight="0.55058044" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.275" sideWeight="0.17412935" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.275" sideWeight="0.12603648" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -608,32 +479,13 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Merge remote-tracking branch 'upstream/dev' into dev&#10;&#10;Conflicts:&#10;&#9;app/cache/dev/appDevDebugProjectContainer.php&#10;&#9;app/cache/dev/appDevDebugProjectContainer.php.meta&#10;&#9;app/cache/dev/appDevDebugProjectContainer.xml&#10;&#9;app/cache/dev/classes.php&#10;&#9;app/cache/dev/classes.php.meta&#10;&#9;app/cache/dev/profiler/index.csv&#10;&#9;app/cache/dev/twig/29/97/071c04b09edc8cd0f2aa3ade1c4ec193683a7d86689ba8d5f3bd159068f1.php&#10;&#9;app/cache/dev/twig/44/b3/f6ab1d0105d1ed6bd90ffd4c40a7e63fab2947f26998a651cf844b73293a.php&#10;&#9;app/cache/dev/twig/4b/1b/3d01a42d6dc724fd6606966e911690a0b8e3fc60342fb1461ff90f3e091b.php&#10;&#9;app/cache/dev/twig/57/cb/199f720201a82cbf7de82f0c0049403a63c1978e1950a1c14942db9e1c4c.php&#10;&#9;app/cache/dev/twig/70/aa/df21b5ef4c08a2ec1a944d1d64182e686b1b5c9acd54f46cf0a29403a196.php&#10;&#9;app/cache/dev/twig/7e/f2/f0e54ba5da5a4efdf7584557794a6d29943aca71cc80961dceadf374c48a.php&#10;&#9;app/cache/dev/twig/82/c9/a4986d528513a939df1801434b53af5e61834d51b8ceb840741dca945843.php&#10;&#9;app/cache/dev/twig/a4/ac/531a53229f351ac96ede3510ce299fa1f7d0dadbc09fda3a5fd19444fd23.php&#10;&#9;app/cache/dev/twig/c3/fb/e9728baab771f733a8ddb56621fe7996f5b60eca1634039d9ea1cbae94ca.php&#10;&#9;app/cache/dev/twig/fe/46/91f311b82318556c56225373b23a5be00b20e563fafef99d076f443f90f9.php&#10;&#9;app/logs/dev.log&#10;&#9;composer.json&#10;&#9;composer.lock&#10;&#9;vendor/autoload.php&#10;&#9;vendor/composer/autoload_real.php&#10;&#9;vendor/composer/installed.json&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'upstream/dev' into dev&#10;&#10;Conflicts:&#10;&#9;app/cache/dev/appDevDebugProjectContainer.php&#10;&#9;app/cache/dev/appDevDebugProjectContainer.php.meta&#10;&#9;app/cache/dev/appDevDebugProjectContainer.xml&#10;&#9;app/cache/dev/classes.php&#10;&#9;app/cache/dev/classes.php.meta&#10;&#9;app/cache/dev/profiler/index.csv&#10;&#9;app/cache/dev/twig/29/97/071c04b09edc8cd0f2aa3ade1c4ec193683a7d86689ba8d5f3bd159068f1.php&#10;&#9;app/cache/dev/twig/44/b3/f6ab1d0105d1ed6bd90ffd4c40a7e63fab2947f26998a651cf844b73293a.php&#10;&#9;app/cache/dev/twig/4b/1b/3d01a42d6dc724fd6606966e911690a0b8e3fc60342fb1461ff90f3e091b.php&#10;&#9;app/cache/dev/twig/57/cb/199f720201a82cbf7de82f0c0049403a63c1978e1950a1c14942db9e1c4c.php&#10;&#9;app/cache/dev/twig/70/aa/df21b5ef4c08a2ec1a944d1d64182e686b1b5c9acd54f46cf0a29403a196.php&#10;&#9;app/cache/dev/twig/7e/f2/f0e54ba5da5a4efdf7584557794a6d29943aca71cc80961dceadf374c48a.php&#10;&#9;app/cache/dev/twig/82/c9/a4986d528513a939df1801434b53af5e61834d51b8ceb840741dca945843.php&#10;&#9;app/cache/dev/twig/a4/ac/531a53229f351ac96ede3510ce299fa1f7d0dadbc09fda3a5fd19444fd23.php&#10;&#9;app/cache/dev/twig/c3/fb/e9728baab771f733a8ddb56621fe7996f5b60eca1634039d9ea1cbae94ca.php&#10;&#9;app/cache/dev/twig/fe/46/91f311b82318556c56225373b23a5be00b20e563fafef99d076f443f90f9.php&#10;&#9;app/logs/dev.log&#10;&#9;composer.json&#10;&#9;composer.lock&#10;&#9;vendor/autoload.php&#10;&#9;vendor/composer/autoload_real.php&#10;&#9;vendor/composer/installed.json&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Entity/Group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="12" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="65" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="774">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/DependencyInjection/Configuration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
@@ -652,13 +504,6 @@
     <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Controller/OpBancaireController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="30" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.0" vertical-offset="1260" max-vertical-offset="1476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="29" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="360">
           <folding />
         </state>
       </provider>
@@ -712,7 +557,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="473" selection-end="473" vertical-scroll-proportion="0.30975142" vertical-offset="108" max-vertical-offset="1080">
+        <state line="16" column="41" selection-start="548" selection-end="548" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/DemoBundle/Command/HelloWorldCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="953" selection-end="953" vertical-scroll-proportion="-5.3333335" vertical-offset="378" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="29" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="31" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="1145" max-vertical-offset="1476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/creer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="6" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.62886596" vertical-offset="735" max-vertical-offset="1026">
           <folding />
         </state>
       </provider>
