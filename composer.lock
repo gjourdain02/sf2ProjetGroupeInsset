@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "3041a0175e9d190f12344c27c5c344d9",
+    "hash": "28de947ee6c18586df6ac5368f016991",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -932,6 +932,50 @@
             "time": "2013-11-14 19:48:31"
         },
         {
+            "name": "pinano/bootstrap3-bundle",
+            "version": "dev-master",
+            "target-dir": "Pinano/Bootstrap3Bundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pinano/bootstrap3-bundle.git",
+                "reference": "df6b662e295c65c109f5dfdd2f6fa023ae19481d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pinano/bootstrap3-bundle/zipball/df6b662e295c65c109f5dfdd2f6fa023ae19481d",
+                "reference": "df6b662e295c65c109f5dfdd2f6fa023ae19481d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": "2.*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Pinano\\Bootstrap3Bundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fernando Arroyo",
+                    "email": "farroyo@gmail.com"
+                }
+            ],
+            "description": "Symfony2 bundle for wrapping Twitter Bootstrap 3",
+            "homepage": "http://github.com/pinano/bootstrap3-bundle",
+            "keywords": [
+                "bootstrap",
+                "bootstrap3",
+                "bundle"
+            ],
+            "time": "2014-02-04 07:14:41"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -1610,7 +1654,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "friendsofsymfony/user-bundle": 20
+        "friendsofsymfony/user-bundle": 20,
+        "pinano/bootstrap3-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
