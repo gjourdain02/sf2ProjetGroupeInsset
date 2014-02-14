@@ -1,3 +1,52 @@
-UZ
+{% block javascripts %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    {% javascripts
 
-<form name="acme_userbundle_comptetype aaa" method="post" action=""><div id="acme_userbundle_comptetype"><div><label for="acme_userbundle_comptetype_nom" class="required">Nom</label><input type="text" id="acme_userbundle_comptetype_nom" name="acme_userbundle_comptetype[nom]" required="required" /></div><div><label for="acme_userbundle_comptetype_numeroCompte" class="required">Numero compte</label><input type="text" id="acme_userbundle_comptetype_numeroCompte" name="acme_userbundle_comptetype[numeroCompte]" required="required" /></div><div><button type="submit" id="acme_userbundle_comptetype_save" name="acme_userbundle_comptetype[save]">Save</button></div><input type="hidden" id="acme_userbundle_comptetype__token" name="acme_userbundle_comptetype[_token]" value="HEWGN7O1gDXIePRs92DfQopCQ8dCTa9Nwqg8nMTjlo0" /></div></form>
+    '@PinanoBootstrap3Bundle/Resources/public/js/bootstrap.js'
+
+    %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+{% block stylesheets %}
+    {% stylesheets filter='cssrewrite'
+
+    'bundles/pinanobootstrap3/css/bootstrap.css'
+    'bundles/pinanobootstrap3/css/bootstrap-theme.css'
+
+    'bundles/yourawesomebundle/css/awesomestylesheet.css'
+
+    %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}
+
+
+
+<div class="container">
+<div class="panel panel-info" >
+    <div class="panel-heading"> Creation d'un nouveau compte bancaire </div>
+<form name="acme_userbundle_comptetype aaa" method="post" action="">
+
+    <div id="acme_userbundle_comptetype">
+        <div class="panel-body">
+            <div>
+               <label for="acme_userbundle_comptetype_nom" class="required">Nom</label>
+             <input type="text" id="acme_userbundle_comptetype_nom" name="acme_userbundle_comptetype[nom]" required="required" />
+            </div>
+            <div>
+                <label for="acme_userbundle_comptetype_numeroCompte" class="required">Numero compte</label>
+                <input type="text" id="acme_userbundle_comptetype_numeroCompte" name="acme_userbundle_comptetype[numeroCompte]" required="required" />
+            </div>
+            </div>
+            <div class="panel-footer">
+            <div>
+                <button type="submit" id="acme_userbundle_comptetype_save" name="acme_userbundle_comptetype[save]">Save</button>
+            </div>
+            </div>
+            <input type="hidden" id="acme_userbundle_comptetype__token" name="acme_userbundle_comptetype[_token]" value="HEWGN7O1gDXIePRs92DfQopCQ8dCTa9Nwqg8nMTjlo0" />
+    </div>
+</form>
+</div>
+</div>
