@@ -3,5 +3,6 @@ composer.lock
 composer.phar
 autoload.php
 /vendor/
-/app/cache/
+/app/cache/*
+/app/logs/*
 /app/config/parameters.yml
