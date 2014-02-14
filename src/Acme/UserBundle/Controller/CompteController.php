@@ -21,9 +21,6 @@ class CompteController extends Controller
             ->getRepository('UserBundle:Compte')
             ->findByUser($user);
 
-        var_dump($compte);
-        die();
-
         if (!$compte)
         {
             throw $this->createNotFoundException(
@@ -31,8 +28,33 @@ class CompteController extends Controller
             );
         }
 
-        return $this->render('UserBundle:Compte:show.html.twig');
+        /*$op = $this->getDoctrine()
+            ->getRepository('UserBundle:OperationBancaire')
+            ->findByCompte($compte[0]);*/
+        var_dump($this->soldeCompte($compte[0])['operations']);
+        return $this->render('UserBundle:Compte:show.html.twig', array('solde' => $this->soldeCompte($compte[0])['solde'], 'operations' => $this->soldeCompte($compte[0])['operations']));
     }
+
+    public function soldeCompte(Compte $compte)
+    {
+        $operations = $this->getDoctrine()
+            ->getRepository('UserBundle:OperationBancaire')
+            ->findByCompte($compte);
+        $solde = 0;
+        foreach ($operations as $k => $v)
+        {
+            if ($v->getType())
+            {
+                $solde += $v->getMontant();
+            }
+            else
+            {
+                $solde -= $v->getMontant();
+            }
+        }
+        return array('solde' => $solde, 'operations' => $operations);
+    }
+
     public function creerAction(Request $request)
     {
         // crée une tâche et lui donne quelques données par défaut pour cet exemple
