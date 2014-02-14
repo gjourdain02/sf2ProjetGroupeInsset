@@ -2,7 +2,7 @@ phpunit.xml
 composer.lock
 composer.phar
 autoload.php
-/vendor/
+/vendor/*
 /app/cache/*
 /app/logs/*
 /app/config/parameters.yml
