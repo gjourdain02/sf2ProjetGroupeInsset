@@ -46,7 +46,7 @@ class OpBancaireController extends Controller
                 // die();
                 $em->persist($reg);
                 $em->flush();
-                return $this->redirect($this->generateUrl('task'));
+                return $this->redirect($this->generateUrl('task_success'));
             //}
         }
 
@@ -70,5 +70,7 @@ class OpBancaireController extends Controller
         $em = $this->getDoctrine()->getManager();
         $em->remove($operation);
         $em->flush();
+
+        return $this->redirect($this->generateUrl('task_success'));
     }
 }

@@ -1,8 +1,0 @@
-Acme\UserBundle\Entity\Compte:
-    type:  entity
-    table: cpt_bancaire
-    id:
-        id:
-            type: integer
-            generator:
-                strategy: AUTO

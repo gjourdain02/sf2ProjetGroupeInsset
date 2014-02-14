@@ -1,3 +1,4 @@
+# Route pour la gestion des comptes bancaires
 creerCompte:
     pattern:  /compte/creer
     defaults: { _controller: UserBundle:Compte:creer }
@@ -10,10 +11,14 @@ supprCompte:
     pattern: /compte/suppr/{id}
     defaults: {_controller: UserBundle:Compte:suppr}
 
+montrerCompte:
+    pattern: /compte/affich
+    defaults: {_controller: UserBundle:Compte:show}
+
+# Route pour la gestion des opérations bancaires
 creerOperation:
     pattern:  /opbancaire/creer/{id}
     defaults: { _controller: UserBundle:OpBancaire:creer }
-
 
 supprOperation:
     pattern:  /opbancaire/suppr/{id}

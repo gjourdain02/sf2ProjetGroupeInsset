@@ -13,6 +13,26 @@ use Acme\UserBundle\Entity\Compte;
 
 class CompteController extends Controller
 {
+    public function showAction()
+    {
+        $user = $this->container->get('security.context')->getToken()->getUser();
+
+        $compte = $this->getDoctrine()
+            ->getRepository('UserBundle:Compte')
+            ->findByUser($user);
+
+        var_dump($compte);
+        die();
+
+        if (!$compte)
+        {
+            throw $this->createNotFoundException(
+                'Aucun compte trouvé pour cet id : '.$id
+            );
+        }
+
+        return $this->render('UserBundle:Compte:show.html.twig');
+    }
     public function creerAction(Request $request)
     {
         // crée une tâche et lui donne quelques données par défaut pour cet exemple

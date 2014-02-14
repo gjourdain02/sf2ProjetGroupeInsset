@@ -4,3 +4,4 @@ composer.phar
 autoload.php
 /vendor/
 /app/cache/
+/app/config/parameters.yml
