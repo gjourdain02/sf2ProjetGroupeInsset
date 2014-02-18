@@ -35,6 +35,13 @@ class CompteController extends Controller
         return $this->render('UserBundle:Compte:show.html.twig', array('solde' => $this->soldeCompte($compte[0])['solde'], 'operations' => $this->soldeCompte($compte[0])['operations']));
     }
 
+    /**
+     * Ici, la fonction va calculer le solde d'un compte donné
+     * Pour cela, on va recupérer les opération sur ce compte et faire le calcul.
+     * On verifie le type de l'opération pour savoir si il s'agit d'un débit ou d'un crédit
+     * @param Compte $compte
+     * @return array
+     */
     public function soldeCompte(Compte $compte)
     {
         $operations = $this->getDoctrine()
