@@ -23,17 +23,21 @@
     {% endstylesheets %}
 {% endblock %}
 
+{% block title %}Giltin{% endblock %}
+
 {% block body %}
     <nav class="navbar navbar-default " role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Giltin</a>
+                <a class="navbar-brand" href="{{ path('index') }}">Giltin</a>
             </div>
 
             <ul class=" nav navbar-nav">
                 <li>
                     <a href="{{ path('creerCompte') }}" class="navbar-link">Creer un compte bancaire</a>
                 </li>
+
+
             </ul>
         </div>
     </nav>

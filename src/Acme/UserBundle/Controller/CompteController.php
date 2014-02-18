@@ -17,6 +17,7 @@ class CompteController extends Controller
     {
         $user = $this->container->get('security.context')->getToken()->getUser();
 
+
         $compte = $this->getDoctrine()
             ->getRepository('UserBundle:Compte')
             ->findByUser($user);
@@ -24,15 +25,15 @@ class CompteController extends Controller
         if (!$compte)
         {
             throw $this->createNotFoundException(
-                'Aucun compte trouvé pour cet id : '.$id
+                'Aucun compte trouvé pour cet utilisateur : '.$user
             );
         }
-
-        /*$op = $this->getDoctrine()
+        //var_dump($compte);
+        $op = $this->getDoctrine()
             ->getRepository('UserBundle:OperationBancaire')
-            ->findByCompte($compte[0]);*/
-        var_dump($this->soldeCompte($compte[0])['operations']);
-        return $this->render('UserBundle:Compte:show.html.twig', array('solde' => $this->soldeCompte($compte[0])['solde'], 'operations' => $this->soldeCompte($compte[0])['operations']));
+            ->findByCompte($compte[0]);
+        //var_dump($this->soldeCompte($compte[0])['operations']);
+       return $this->render('UserBundle:Compte:show.html.twig', array('solde' => $this->soldeCompte($compte[0])['solde'], 'operations' => $this->soldeCompte($compte[0])['operations'], 'comptes' => $compte));
     }
 
     /**
@@ -88,11 +89,7 @@ class CompteController extends Controller
         return $this->render('UserBundle:Compte:creer.html.twig', array(
             'form' => $form->createView(),
         ));
-        /*return $this->render(
-            'UserBundle:Default:index.html.twig',
-            array('name' => $name)
-        );
-        /return new Response('<html><body>Hello '.$name.'!</body></html>');*/
+
     }
 
     public function modifAction($id){

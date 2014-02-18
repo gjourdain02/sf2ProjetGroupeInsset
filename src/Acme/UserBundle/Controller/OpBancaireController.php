@@ -42,11 +42,10 @@ class OpBancaireController extends Controller
                 $reg->setCompte($compte);
                 $reg->setVerif(1);
 
-                // var_dump($reg);
-                // die();
+
                 $em->persist($reg);
                 $em->flush();
-                return $this->redirect($this->generateUrl('task_success'));
+                return $this->redirect($this->generateUrl('index'));
             //}
         }
 
