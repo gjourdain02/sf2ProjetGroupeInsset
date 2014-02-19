@@ -1,0 +1,44 @@
+{% extends "UserBundle::layout.html.twig" %}
+
+{% block title %}Gitlin - {{ compte.nom }}{% endblock %}
+{% block contenu %}
+
+    {{ compte.nom }} {{ compte.numeroCompte }}
+
+<a href="{{ path('creerOperation', {'id' : compte.id} )}}"
+   class="close confirm-del-fiche" >
+    <span class="glyphicon glyphicon-plus"></span>
+</a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table">
+                    <tr>
+                        <th>Nom</th>
+                        <th>Montant</th>
+
+                        <th>&nbsp</th>
+
+                    </tr>
+
+                    {% for operation in operations %}
+                        <tr>
+                            <td>{{ operation.nom }}</td>
+                            <td>{{ operation.montant }}</td>
+
+
+                            <td><a href="{{ path('supprOperation', {'id' : operation.id} )}}"
+                                   class="close confirm-del-fiche" >
+                                    <span class="glyphicon glyphicon-remove-circle"></span>
+                                </a>
+                            </td>
+
+
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -13,6 +13,15 @@ use Acme\UserBundle\Entity\Compte;
 
 class CompteController extends Controller
 {
+    /**
+     * Cette fonction va afficher touts les compte pour le client qui est connecté
+     * c'est la qu'il pourra accéder a la modification, suppression d'un compte
+     * mais aussi la possibilité de voir plus précisement un compte en particulier en cliquant dessus.
+     *
+     *
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
+     */
     public function showAction()
     {
         $user = $this->container->get('security.context')->getToken()->getUser();
@@ -28,12 +37,13 @@ class CompteController extends Controller
                 'Aucun compte trouvé pour cet utilisateur : '.$user
             );
         }
-        //var_dump($compte);
+
         $op = $this->getDoctrine()
             ->getRepository('UserBundle:OperationBancaire')
             ->findByCompte($compte[0]);
         //var_dump($this->soldeCompte($compte[0])['operations']);
-       return $this->render('UserBundle:Compte:show.html.twig', array('solde' => $this->soldeCompte($compte[0])['solde'], 'operations' => $this->soldeCompte($compte[0])['operations'], 'comptes' => $compte));
+        return $this->render('UserBundle:Compte:show.html.twig', array('solde' => $this->soldeCompte($compte[0])['solde'],
+            'operations' => $this->soldeCompte($compte[0])['operations'], 'comptes' => $compte));
     }
 
     /**
@@ -61,6 +71,29 @@ class CompteController extends Controller
             }
         }
         return array('solde' => $solde, 'operations' => $operations);
+    }
+
+    public function detailAction($id){
+        $compte = $this->getDoctrine()
+            ->getRepository('UserBundle:Compte')
+            ->find($id);
+
+        if (!$compte)
+        {
+            throw $this->createNotFoundException(
+                'Aucun compte trouvé pour cet id : '.$id
+            );
+        }
+
+        $ops = $this->getDoctrine()
+            ->getRepository('UserBundle:OperationBancaire')
+            ->findByCompte($compte);
+
+        return $this->render('UserBundle:Compte:detail.html.twig',
+            array('solde' => $this->soldeCompte($compte)['solde'],
+                  'operations' => $ops,
+                  'compte' => $compte));
+
     }
 
     public function creerAction(Request $request)
@@ -124,7 +157,7 @@ class CompteController extends Controller
                 $em->persist($compte);
                 $em->flush();
 
-                return $this->redirect($this->generateUrl('task_success'));
+                return $this->redirect($this->generateUrl('montrerCompte'));
             }
 
 
@@ -150,6 +183,8 @@ class CompteController extends Controller
         $em = $this->getDoctrine()->getManager();
         $em->remove($compte);
         $em->flush();
+
+        return $this->redirect($this->generateUrl('montrerCompte'));
     }
 
 }

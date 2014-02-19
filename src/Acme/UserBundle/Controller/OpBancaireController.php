@@ -45,7 +45,7 @@ class OpBancaireController extends Controller
 
                 $em->persist($reg);
                 $em->flush();
-                return $this->redirect($this->generateUrl('index'));
+                return $this->redirect($this->generateUrl('detailCompte', array( 'id'=>$id)));
             //}
         }
 
@@ -60,6 +60,7 @@ class OpBancaireController extends Controller
             ->getRepository('UserBundle:OperationBancaire')
             ->find($id);
 
+
         if (!$operation)
         {
             throw $this->createNotFoundException(
@@ -70,6 +71,6 @@ class OpBancaireController extends Controller
         $em->remove($operation);
         $em->flush();
 
-        return $this->redirect($this->generateUrl('task_success'));
+        return $this->redirect($this->generateUrl('montrerCompte'));
     }
 }

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="1.5.2">
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/DependencyInjection/UserExtension.php">
+ <error line="13" column="1" severity="warning" message="Line exceeds 80 characters; contains 91 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="17" column="5" severity="warning" message="This comment is 50% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="25" column="57" severity="error" message="New objects must be assigned to a variable" source="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
+ <error line="25" column="106" severity="warning" message="Line exceeds 80 characters; contains 105 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/DependencyInjection/Configuration.php">
+ <error line="9" column="1" severity="warning" message="Line exceeds 80 characters; contains 87 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="11" column="1" severity="error" message="Line exceeds maximum limit of 120 characters; contains 131 characters" source="Generic.Files.LineLength.MaxExceeded"/>
+ <error line="15" column="5" severity="warning" message="This comment is 50% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Form/Type/OpBancaireType.php">
+ <error line="11" column="12" severity="warning" message="The method parameter $options is never used" source="Generic.CodeAnalysis.UnusedFunctionParameter.Found"/>
+ <error line="27" column="5" severity="warning" message="This comment is 59% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Form/Type/CompteType.php">
+ <error line="12" column="1" severity="warning" message="Line exceeds 80 characters; contains 108 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="13" column="1" severity="warning" message="Line exceeds 80 characters; contains 97 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="19" column="12" severity="warning" message="The method parameter $options is never used" source="Generic.CodeAnalysis.UnusedFunctionParameter.Found"/>
+ <error line="29" column="1" severity="warning" message="Line exceeds 80 characters; contains 90 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/OperationBancaire.php">
+ <error line="12" column="1" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="18" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="28" column="82" severity="warning" message="Line exceeds 80 characters; contains 81 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="31" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="37" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="43" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="49" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="55" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="61" column="5" severity="warning" message="This comment is 41% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="67" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="73" column="5" severity="warning" message="This comment is 43% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="75" column="1" severity="warning" message="Line exceeds 80 characters; contains 89 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="239" column="5" severity="warning" message="This comment is 36% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="242" column="82" severity="warning" message="Line exceeds 80 characters; contains 81 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="247" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="261" column="116" severity="warning" message="Line exceeds 80 characters; contains 115 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Group.php">
+ <error line="8" column="1" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="14" column="5" severity="warning" message="This comment is 43% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/OperationPeriodique.php">
+ <error line="10" column="1" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="16" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="29" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="35" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="41" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="47" column="5" severity="warning" message="This comment is 41% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="53" column="5" severity="warning" message="This comment is 41% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="59" column="5" severity="warning" message="This comment is 41% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="61" column="1" severity="warning" message="Line exceeds 80 characters; contains 87 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="196" column="103" severity="warning" message="Line exceeds 80 characters; contains 102 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="208" column="106" severity="warning" message="Line exceeds 80 characters; contains 105 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Dump.php">
+ <error line="8" column="1" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="14" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="27" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="33" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="39" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Seuil.php">
+ <error line="9" column="1" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="15" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="27" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="33" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Compte.php">
+ <error line="12" column="1" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="18" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="31" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="37" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="43" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="49" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="159" column="49" severity="error" message="New objects must be assigned to a variable" source="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
+ <error line="160" column="49" severity="error" message="New objects must be assigned to a variable" source="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
+ <error line="162" column="90" severity="warning" message="Line exceeds 80 characters; contains 89 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="165" column="58" severity="error" message="New objects must be assigned to a variable" source="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
+ <error line="166" column="58" severity="error" message="New objects must be assigned to a variable" source="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
+ <error line="168" column="90" severity="warning" message="Line exceeds 80 characters; contains 89 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Categorie.php">
+ <error line="8" column="1" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="14" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="27" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/User.php">
+ <error line="8" column="1" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="14" column="5" severity="warning" message="This comment is 43% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="27" column="5" severity="warning" message="This comment is 46% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="30" column="1" severity="warning" message="Line exceeds 80 characters; contains 85 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="31" column="1" severity="warning" message="Line exceeds 80 characters; contains 92 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="36" column="5" severity="warning" message="This comment is 42% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Controller/OpBancaireController.php">
+ <error line="20" column="82" severity="warning" message="Line exceeds 80 characters; contains 81 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="28" column="9" severity="warning" message="This comment is 86% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="31" column="35" severity="error" message="New objects must be assigned to a variable" source="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
+ <error line="36" column="13" severity="warning" message="This comment is 73% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="40" column="40" severity="error" message="New objects must be assigned to a variable" source="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
+ <error line="45" column="17" severity="warning" message="This comment is 67% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="46" column="17" severity="warning" message="This comment is 80% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="50" column="13" severity="warning" message="This comment is 100% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Controller/CompteController.php">
+ <error line="18" column="82" severity="warning" message="Line exceeds 80 characters; contains 81 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="21" column="7" severity="warning" message="This comment is 60% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="21" column="7" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 6" source="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="31" column="8" severity="warning" message="This comment is 67% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="31" column="8" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 7" source="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="32" column="9" severity="warning" message="This comment is 68% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="35" column="9" severity="warning" message="This comment is 88% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="36" column="9" severity="warning" message="This comment is 80% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="36" column="9" severity="error" message="Line exceeds maximum limit of 120 characters; contains 188 characters" source="Generic.Files.LineLength.MaxExceeded"/>
+ <error line="41" column="1" severity="warning" message="Line exceeds 80 characters; contains 83 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="42" column="1" severity="warning" message="Line exceeds 80 characters; contains 94 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="68" column="9" severity="warning" message="Line exceeds 80 characters; contains 87 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="71" column="82" severity="warning" message="Line exceeds 80 characters; contains 81 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="75" column="35" severity="error" message="New objects must be assigned to a variable" source="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
+ <error line="87" column="100" severity="warning" message="Line exceeds 80 characters; contains 99 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="92" column="9" severity="warning" message="This comment is 62% valid code; is this commented out code?" source="Squiz.PHP.CommentedOutCode.Found"/>
+ <error line="112" column="35" severity="error" message="New objects must be assigned to a variable" source="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
+</file>
+<file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Tests/Controller/DefaultControllerTest.php">
+ <error line="15" column="91" severity="warning" message="Line exceeds 80 characters; contains 90 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+</checkstyle>

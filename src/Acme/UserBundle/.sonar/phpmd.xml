@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="1.5.0" timestamp="2014-02-18T16:11:50+01:00">
+  <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Controller/CompteController.php">
+    <violation beginline="52" endline="52" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$k'.
+    </violation>
+  </file>
+  <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Controller/OpBancaireController.php">
+    <violation beginline="20" endline="20" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$user'.
+    </violation>
+    <violation beginline="27" endline="27" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$opPeriodique'.
+    </violation>
+  </file>
+  <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/DependencyInjection/Configuration.php">
+    <violation beginline="21" endline="21" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$rootNode'.
+    </violation>
+  </file>
+  <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/DependencyInjection/UserExtension.php">
+    <violation beginline="23" endline="23" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$config'.
+    </violation>
+  </file>
+</pmd>

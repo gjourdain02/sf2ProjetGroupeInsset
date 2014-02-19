@@ -1,5 +1,49 @@
-Il vous reste {{ solde }} &euro;
+{% extends "UserBundle::layout.html.twig" %}
 
-{% for compte in comptes %}
-    {{ compte.nom }}
-{% endfor %}
+{% block title %}Gitlin - Comptes Bancaires{% endblock %}
+{% block contenu %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table">
+                    <tr>
+                        <th>Nom</th>
+                        <th>Numéro</th>
+
+                        <th>&nbsp</th>
+                        <th>&nbsp</th>
+                        <th>&nbsp</th>
+                    </tr>
+
+                    {% for compte in comptes %}
+                        <tr>
+                            <td>{{ compte.nom }}</td>
+                            <td>{{ compte.numeroCompte }}</td>
+
+
+                            <td><a href="{{ path('supprCompte', {'id' : compte.id} )}}"
+                                   class="close confirm-del-fiche" >
+                                    <span class="glyphicon glyphicon-remove-circle"></span>
+                                </a>
+                            </td>
+
+                            <td><a href="{{ path('modifCompte', {'id' : compte.id} )}}"
+                                   class="close confirm-del-fiche" >
+                                    <span class="glyphicon glyphicon-wrench"></span>
+                                </a>
+                            </td>
+                            <td><a href="{{ path('detailCompte', {'id' : compte.id} )}}"
+                                   class="close confirm-del-fiche" >
+                                    <span class="glyphicon glyphicon-wrench"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
