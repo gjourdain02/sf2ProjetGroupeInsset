@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d16deace-c041-4892-a649-650145aab83f" name="Default" comment="Mise en place du layout, test de bootstrap et début&#10;du commentaire de code">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Controller/IndexController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Index/index.html.twig" />
+    <list default="true" id="d16deace-c041-4892-a649-650145aab83f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/modif.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Controller/CompteController.php" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Controller/CompteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Controller/OpBancaireController.php" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Controller/OpBancaireController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/UserBundle.php" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/UserBundle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/creer.html.twig" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/creer.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/OpBancaire/creer.html.twig" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/OpBancaire/creer.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/detail.html.twig" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/detail.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/show.html.twig" afterPath="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -35,19 +29,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserBundle.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/UserBundle.php">
+      <file leaf-file-name="CompteController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Controller/CompteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="288">
+            <state line="165" column="53" selection-start="5208" selection-end="5208" vertical-scroll-proportion="-44.88889" vertical-offset="1758" max-vertical-offset="3510">
+              <folding>
+                <element signature="e#46#103#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Controller/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="396">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/routing.yml">
+      <file leaf-file-name="detail.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/detail.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="684">
+            <state line="24" column="0" selection-start="683" selection-end="683" vertical-scroll-proportion="-10.0" vertical-offset="162" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -56,25 +61,7 @@
       <file leaf-file-name="creer.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/creer.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="41" selection-start="87" selection-end="87" vertical-scroll-proportion="-0.6666667" vertical-offset="18" max-vertical-offset="702">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="creer.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/OpBancaire/creer.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="-0.0" vertical-offset="36" max-vertical-offset="648">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompteController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Controller/CompteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="204" selection-start="1238" selection-end="1238" vertical-scroll-proportion="-9.333333" vertical-offset="270" max-vertical-offset="2772">
+            <state line="0" column="0" selection-start="0" selection-end="1395" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="738">
               <folding />
             </state>
           </provider>
@@ -83,7 +70,7 @@
       <file leaf-file-name="show.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="17" selection-start="79" selection-end="79" vertical-scroll-proportion="0.10325048" vertical-offset="0" max-vertical-offset="523">
+            <state line="24" column="21" selection-start="785" selection-end="785" vertical-scroll-proportion="0.27724665" vertical-offset="287" max-vertical-offset="1026">
               <folding />
             </state>
           </provider>
@@ -92,7 +79,18 @@
       <file leaf-file-name="Compte.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Entity/Compte.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="12.0" vertical-offset="324" max-vertical-offset="3096">
+            <state line="148" column="6" selection-start="2378" selection-end="2378" vertical-scroll-proportion="0.4814815" vertical-offset="2690" max-vertical-offset="3186">
+              <folding>
+                <element signature="e#42#84#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modif.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/modif.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="50" selection-start="1322" selection-end="1322" vertical-scroll-proportion="-11.555555" vertical-offset="120" max-vertical-offset="792">
               <folding />
             </state>
           </provider>
@@ -101,7 +99,25 @@
       <file leaf-file-name="OpBancaireController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Controller/OpBancaireController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="16" selection-start="1381" selection-end="1381" vertical-scroll-proportion="-21.333334" vertical-offset="0" max-vertical-offset="1314">
+            <state line="29" column="0" selection-start="907" selection-end="907" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="1332">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OperationPeriodique.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Entity/OperationPeriodique.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="4068">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppKernel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="1304" selection-end="1304" vertical-scroll-proportion="-9.37037" vertical-offset="251" max-vertical-offset="774">
               <folding />
             </state>
           </provider>
@@ -125,20 +141,20 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Form/Type/CompteType.php" />
-        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/OpBancaire/creer.html.twig" />
         <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Index/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Acme/UserBundle/Controller/IndexController.php" />
-        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/creer.html.twig" />
-        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Acme/UserBundle/Controller/RegistrationController.php" />
         <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Security/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Acme/UserBundle/UserBundle.php" />
+        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/OpBancaire/creer.html.twig" />
+        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/creer.html.twig" />
+        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Twig/UserExtension.php" />
+        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Acme/UserBundle/Controller/OpBancaireController.php" />
+        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/detail.html.twig" />
+        <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/modif.html.twig" />
         <option value="$PROJECT_DIR$/src/Acme/UserBundle/Controller/CompteController.php" />
         <option value="$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/show.html.twig" />
       </list>
@@ -150,6 +166,22 @@
     <option name="y" value="24" />
     <option name="width" value="1368" />
     <option name="height" value="745" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -177,7 +209,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -259,74 +290,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sf2ProjetGroupeInsset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sf2ProjetGroupeInsset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpBancaire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sf2ProjetGroupeInsset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sf2ProjetGroupeInsset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -516,6 +479,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -575,7 +539,11 @@
       <created>1392720276498</created>
       <updated>1392720276498</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mise en place d'une &quot;page d'index&quot; , début de l'affichage&#10;des comptes pour un utilisateur donné">
+      <created>1392738449089</created>
+      <updated>1392738449089</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -584,23 +552,23 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3233831" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2931818" sideWeight="0.81260365" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2931818" sideWeight="0.18573798" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30227274" sideWeight="0.18573798" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30227274" sideWeight="0.81260365" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39966834" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -612,104 +580,125 @@
     </option>
     <MESSAGE value="Merge remote-tracking branch 'upstream/dev' into dev&#10;&#10;Conflicts:&#10;&#9;app/cache/dev/appDevDebugProjectContainer.php&#10;&#9;app/cache/dev/appDevDebugProjectContainer.php.meta&#10;&#9;app/cache/dev/appDevDebugProjectContainer.xml&#10;&#9;app/cache/dev/classes.php&#10;&#9;app/cache/dev/classes.php.meta&#10;&#9;app/cache/dev/profiler/index.csv&#10;&#9;app/cache/dev/twig/29/97/071c04b09edc8cd0f2aa3ade1c4ec193683a7d86689ba8d5f3bd159068f1.php&#10;&#9;app/cache/dev/twig/44/b3/f6ab1d0105d1ed6bd90ffd4c40a7e63fab2947f26998a651cf844b73293a.php&#10;&#9;app/cache/dev/twig/4b/1b/3d01a42d6dc724fd6606966e911690a0b8e3fc60342fb1461ff90f3e091b.php&#10;&#9;app/cache/dev/twig/57/cb/199f720201a82cbf7de82f0c0049403a63c1978e1950a1c14942db9e1c4c.php&#10;&#9;app/cache/dev/twig/70/aa/df21b5ef4c08a2ec1a944d1d64182e686b1b5c9acd54f46cf0a29403a196.php&#10;&#9;app/cache/dev/twig/7e/f2/f0e54ba5da5a4efdf7584557794a6d29943aca71cc80961dceadf374c48a.php&#10;&#9;app/cache/dev/twig/82/c9/a4986d528513a939df1801434b53af5e61834d51b8ceb840741dca945843.php&#10;&#9;app/cache/dev/twig/a4/ac/531a53229f351ac96ede3510ce299fa1f7d0dadbc09fda3a5fd19444fd23.php&#10;&#9;app/cache/dev/twig/c3/fb/e9728baab771f733a8ddb56621fe7996f5b60eca1634039d9ea1cbae94ca.php&#10;&#9;app/cache/dev/twig/fe/46/91f311b82318556c56225373b23a5be00b20e563fafef99d076f443f90f9.php&#10;&#9;app/logs/dev.log&#10;&#9;composer.json&#10;&#9;composer.lock&#10;&#9;vendor/autoload.php&#10;&#9;vendor/composer/autoload_real.php&#10;&#9;vendor/composer/installed.json&#10;" />
     <MESSAGE value="Mise en place du layout, test de bootstrap et début&#10;du commentaire de code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise en place du layout, test de bootstrap et début&#10;du commentaire de code" />
+    <MESSAGE value="mise en place d'une &quot;page d'index&quot; , début de l'affichage&#10;des comptes pour un utilisateur donné" />
+    <option name="LAST_COMMIT_MESSAGE" value="mise en place d'une &quot;page d'index&quot; , début de l'affichage&#10;des comptes pour un utilisateur donné" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/register_content.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/sonar-project.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="526">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/confirmed.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/email.txt.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Controller/RegistrationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="1" selection-start="1050" selection-end="5654" vertical-scroll-proportion="-10.0" vertical-offset="18" max-vertical-offset="2556" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="526" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="502" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/config/routing/security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="29" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/UserBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="288">
+        <state line="7" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="684">
+        <state line="22" column="13" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="774">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/OpBancaire/creer.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="648">
+        <state line="29" column="0" selection-start="1304" selection-end="1304" vertical-scroll-proportion="-9.37037" vertical-offset="251" max-vertical-offset="774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Entity/OperationPeriodique.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4068">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Controller/OpBancaireController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="16" selection-start="1381" selection-end="1381" vertical-scroll-proportion="-21.333334" vertical-offset="0" max-vertical-offset="1314">
+        <state line="29" column="0" selection-start="907" selection-end="907" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="1332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Entity/OperationBancaire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="247" column="22" selection-start="4393" selection-end="4393" vertical-scroll-proportion="0.7777778" vertical-offset="3996" max-vertical-offset="5022">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Entity/Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Entity/Dump.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="34" selection-start="1774" selection-end="1774" vertical-scroll-proportion="3.959847" vertical-offset="17" max-vertical-offset="2322">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/detail.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="683" selection-end="683" vertical-scroll-proportion="-10.0" vertical-offset="162" max-vertical-offset="900">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Entity/Compte.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="12.0" vertical-offset="324" max-vertical-offset="3096">
-          <folding />
+        <state line="148" column="6" selection-start="2378" selection-end="2378" vertical-scroll-proportion="0.4814815" vertical-offset="2690" max-vertical-offset="3186">
+          <folding>
+            <element signature="e#42#84#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/creer.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="41" selection-start="87" selection-end="87" vertical-scroll-proportion="-0.6666667" vertical-offset="18" max-vertical-offset="702">
+        <state line="0" column="0" selection-start="0" selection-end="1395" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/modif.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="50" selection-start="1322" selection-end="1322" vertical-scroll-proportion="-11.555555" vertical-offset="120" max-vertical-offset="792">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Controller/CompteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="204" selection-start="1238" selection-end="1238" vertical-scroll-proportion="-9.333333" vertical-offset="270" max-vertical-offset="2772">
-          <folding />
+        <state line="165" column="53" selection-start="5208" selection-end="5208" vertical-scroll-proportion="-44.88889" vertical-offset="1758" max-vertical-offset="3510">
+          <folding>
+            <element signature="e#46#103#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/UserBundle/Resources/views/Compte/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="79" selection-end="79" vertical-scroll-proportion="0.10325048" vertical-offset="0" max-vertical-offset="523">
+        <state line="24" column="21" selection-start="785" selection-end="785" vertical-scroll-proportion="0.27724665" vertical-offset="287" max-vertical-offset="1026">
           <folding />
         </state>
       </provider>

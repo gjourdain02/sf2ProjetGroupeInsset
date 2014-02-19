@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics generated="2014-02-18T16:11:49" pdepend="1.1.4" ahh="1" andc="0" calls="103" ccn="91" ccn2="91" cloc="578" clsa="0" clsc="18" eloc="662" fanout="56" leafs="11" lloc="368" loc="1495" maxDIT="2" ncloc="917" noc="18" nof="0" noi="0" nom="82" nop="6" roots="7">
+  <files>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Controller/CompteController.php" cloc="30" eloc="103" lloc="56" loc="159" ncloc="129"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Controller/IndexController.php" cloc="6" eloc="14" lloc="9" loc="28" ncloc="22"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Controller/OpBancaireController.php" cloc="6" eloc="55" lloc="37" loc="77" ncloc="71"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/DependencyInjection/Configuration.php" cloc="11" eloc="13" lloc="7" loc="30" ncloc="19"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/DependencyInjection/UserExtension.php" cloc="8" eloc="16" lloc="10" loc="29" ncloc="21"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Categorie.php" cloc="30" eloc="25" lloc="13" loc="67" ncloc="37"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Compte.php" cloc="75" eloc="71" lloc="39" loc="172" ncloc="97"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Dump.php" cloc="60" eloc="45" lloc="25" loc="125" ncloc="65"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Group.php" cloc="9" eloc="8" lloc="4" loc="20" ncloc="11"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/OperationBancaire.php" cloc="135" eloc="102" lloc="60" loc="278" ncloc="143"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/OperationPeriodique.php" cloc="110" eloc="81" lloc="47" loc="223" ncloc="113"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Seuil.php" cloc="45" eloc="35" lloc="19" loc="96" ncloc="51"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/User.php" cloc="32" eloc="24" lloc="14" loc="64" ncloc="32"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Form/Type/CompteType.php" cloc="15" eloc="23" lloc="10" loc="48" ncloc="33"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Form/Type/OpBancaireType.php" cloc="6" eloc="23" lloc="8" loc="40" ncloc="34"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Tests/Controller/DefaultControllerTest.php" cloc="0" eloc="12" lloc="6" loc="18" ncloc="18"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Tests/Controller/OpBancaireControllerTest.php" cloc="0" eloc="6" lloc="2" loc="10" ncloc="10"/>
+    <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/UserBundle.php" cloc="0" eloc="6" lloc="2" loc="11" ncloc="11"/>
+  </files>
+  <package name="Acme\UserBundle\Controller" cr="0.15" noc="3" nof="0" noi="0" nom="8" rcr="0.2775">
+    <class name="CompteController" ca="0" cbo="3" ce="3" cis="5" cloc="30" cr="0.15" csz="5" dit="2" eloc="88" impl="0" lloc="44" loc="146" ncloc="116" noam="5" nocc="0" nom="5" noom="0" npm="5" rcr="0.1925" vars="0" varsi="0" varsnp="0" wmc="12" wmci="12" wmcnp="12">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Controller/CompteController.php"/>
+      <method name="showAction" ccn="1" ccn2="1" cloc="16" eloc="4" lloc="2" loc="22" ncloc="6" npath="1"/>
+      <method name="soldeCompte" ccn="3" ccn2="3" cloc="0" eloc="18" lloc="7" loc="19" ncloc="19" npath="3"/>
+      <method name="creerAction" ccn="2" ccn2="2" cloc="7" eloc="20" lloc="15" loc="32" ncloc="25" npath="2"/>
+      <method name="modifAction" ccn="4" ccn2="4" cloc="0" eloc="32" lloc="14" loc="42" ncloc="42" npath="6"/>
+      <method name="supprAction" ccn="2" ccn2="2" cloc="0" eloc="14" lloc="6" loc="16" ncloc="16" npath="2"/>
+    </class>
+    <class name="IndexController" ca="0" cbo="0" ce="0" cis="1" cloc="0" cr="0.15" csz="1" dit="2" eloc="3" impl="0" lloc="1" loc="7" ncloc="7" noam="1" nocc="0" nom="1" noom="0" npm="1" rcr="0.1925" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Controller/IndexController.php"/>
+      <method name="indexAction" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="OpBancaireController" ca="0" cbo="5" ce="5" cis="2" cloc="6" cr="0.15" csz="2" dit="2" eloc="40" impl="0" lloc="26" loc="61" ncloc="55" noam="2" nocc="0" nom="2" noom="0" npm="2" rcr="0.1925" vars="0" varsi="0" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Controller/OpBancaireController.php"/>
+      <method name="creerAction" ccn="2" ccn2="2" cloc="6" eloc="25" lloc="19" loc="39" ncloc="33" npath="2"/>
+      <method name="supprAction" ccn="2" ccn2="2" cloc="0" eloc="15" lloc="7" loc="18" ncloc="18" npath="2"/>
+    </class>
+  </package>
+  <package name="Acme\UserBundle\DependencyInjection" cr="0.15" noc="2" nof="0" noi="0" nom="2" rcr="0.405">
+    <class name="Configuration" ca="1" cbo="1" ce="1" cis="1" cloc="6" cr="0.15" csz="1" dit="0" eloc="5" impl="1" lloc="3" loc="17" ncloc="11" noam="0" nocc="0" nom="1" noom="0" npm="1" rcr="0.2775" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/DependencyInjection/Configuration.php"/>
+      <method name="getConfigTreeBuilder" ccn="1" ccn2="1" cloc="3" eloc="5" lloc="3" loc="11" ncloc="8" npath="1"/>
+    </class>
+    <class name="UserExtension" ca="0" cbo="4" ce="4" cis="1" cloc="3" cr="0.15" csz="1" dit="2" eloc="6" impl="0" lloc="4" loc="14" ncloc="11" noam="1" nocc="0" nom="1" noom="0" npm="1" rcr="0.2775" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/DependencyInjection/UserExtension.php"/>
+      <method name="load" ccn="1" ccn2="1" cloc="0" eloc="6" lloc="4" loc="8" ncloc="8" npath="1"/>
+    </class>
+  </package>
+  <package name="Acme\UserBundle\Entity" cr="0.15" noc="8" nof="0" noi="0" nom="66" rcr="0.2775">
+    <class name="Categorie" ca="1" cbo="2" ce="2" cis="4" cloc="26" cr="0.15" csz="6" dit="0" eloc="12" impl="0" lloc="4" loc="55" ncloc="29" noam="0" nocc="0" nom="4" noom="0" npm="4" rcr="0.15" vars="2" varsi="2" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Categorie.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="4" ncloc="4" npath="1"/>
+      <method name="getId" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setNom" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getNom" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+    </class>
+    <class name="Compte" ca="5" cbo="8" ce="8" cis="11" cloc="71" cr="0.15" csz="16" dit="0" eloc="45" impl="0" lloc="17" loc="156" ncloc="85" noam="0" nocc="0" nom="11" noom="0" npm="11" rcr="0.15" vars="5" varsi="5" varsnp="0" wmc="11" wmci="11" wmcnp="11">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Compte.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="4" ncloc="4" npath="1"/>
+      <method name="getId" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="getActif" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setActif" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="setNom" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getNom" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setNumeroCompte" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getNumeroCompte" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setUser" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getUser" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="loadValidatorMetadata" ccn="1" ccn2="1" cloc="0" eloc="12" lloc="4" loc="14" ncloc="14" npath="1"/>
+    </class>
+    <class name="Dump" ca="0" cbo="4" ce="4" cis="8" cloc="56" cr="0.15" csz="12" dit="0" eloc="26" impl="0" lloc="10" loc="113" ncloc="57" noam="0" nocc="0" nom="8" noom="0" npm="8" rcr="0.15" vars="4" varsi="4" varsnp="0" wmc="8" wmci="8" wmcnp="8">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Dump.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="4" ncloc="4" npath="1"/>
+      <method name="getId" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setNom" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getNom" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setDateAjout" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getDateAjout" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setUser" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getUser" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+    </class>
+    <class name="Group" ca="0" cbo="0" ce="0" cis="0" cloc="5" cr="0.15" csz="1" dit="2" eloc="0" impl="0" lloc="0" loc="9" ncloc="4" noam="0" nocc="0" nom="0" noom="0" npm="0" rcr="0.2775" vars="1" varsi="1" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Group.php"/>
+    </class>
+    <class name="OperationBancaire" ca="2" cbo="12" ce="12" cis="19" cloc="131" cr="0.15" csz="28" dit="0" eloc="65" impl="0" lloc="27" loc="262" ncloc="131" noam="0" nocc="0" nom="19" noom="0" npm="19" rcr="0.15" vars="9" varsi="9" varsnp="0" wmc="19" wmci="19" wmcnp="19">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/OperationBancaire.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="getId" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setNom" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getNom" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setDateOperation" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getDateOperation" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setType" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getType" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setMontant" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getMontant" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setVerif" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getVerif" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setCompte" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getCompte" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="addCategorie" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="5" ncloc="5" npath="1"/>
+      <method name="removeCategorie" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="getCategories" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setOperationPeriodique" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getOperationPeriodique" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+    </class>
+    <class name="OperationPeriodique" ca="2" cbo="10" ce="10" cis="15" cloc="106" cr="0.15" csz="22" dit="0" eloc="51" impl="0" lloc="21" loc="209" ncloc="103" noam="0" nocc="0" nom="15" noom="0" npm="15" rcr="0.15" vars="7" varsi="7" varsnp="0" wmc="15" wmci="15" wmcnp="15">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/OperationPeriodique.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="getId" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setNom" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getNom" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setDate" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getDate" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setType" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getType" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setMontant" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getMontant" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setCompte" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getCompte" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="addOperationBancaire" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="removeOperationBancaire" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="getOperationBancaire" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+    </class>
+    <class name="Seuil" ca="0" cbo="2" ce="2" cis="6" cloc="41" cr="0.15" csz="9" dit="0" eloc="19" impl="0" lloc="7" loc="83" ncloc="42" noam="0" nocc="0" nom="6" noom="0" npm="6" rcr="0.15" vars="3" varsi="3" varsnp="0" wmc="6" wmci="6" wmcnp="6">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/Seuil.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="3" ncloc="3" npath="1"/>
+      <method name="getId" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setSeuil" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getSeuil" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setCompte" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="getCompte" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+    </class>
+    <class name="User" ca="2" cbo="2" ce="2" cis="3" cloc="28" cr="0.15" csz="6" dit="2" eloc="11" impl="0" lloc="5" loc="53" ncloc="25" noam="3" nocc="0" nom="3" noom="0" npm="3" rcr="0.2775" vars="3" varsi="3" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Entity/User.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="1" eloc="4" lloc="2" loc="6" ncloc="5" npath="1"/>
+      <method name="getActif" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="setActif" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+    </class>
+  </package>
+  <package name="Acme\UserBundle\Form\Type" cr="0.15" noc="2" nof="0" noi="0" nom="5" rcr="0.2775">
+    <class name="CompteType" ca="1" cbo="2" ce="2" cis="3" cloc="15" cr="0.15" csz="3" dit="2" eloc="13" impl="0" lloc="3" loc="40" ncloc="25" noam="3" nocc="0" nom="3" noom="0" npm="3" rcr="0.21375" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Form/Type/CompteType.php"/>
+      <method name="buildForm" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="1" loc="8" ncloc="8" npath="1"/>
+      <method name="setDefaultOptions" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="1" loc="6" ncloc="6" npath="1"/>
+      <method name="getName" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+    </class>
+    <class name="OpBancaireType" ca="1" cbo="1" ce="1" cis="2" cloc="6" cr="0.15" csz="2" dit="2" eloc="14" impl="0" lloc="2" loc="32" ncloc="26" noam="2" nocc="0" nom="2" noom="0" npm="2" rcr="0.21375" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Form/Type/OpBancaireType.php"/>
+      <method name="buildForm" ccn="1" ccn2="1" cloc="0" eloc="11" lloc="1" loc="14" ncloc="14" npath="1"/>
+      <method name="getName" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+    </class>
+  </package>
+  <package name="Acme\UserBundle\Tests\Controller" cr="0.15" noc="2" nof="0" noi="0" nom="1" rcr="0.2775">
+    <class name="DefaultControllerTest" ca="0" cbo="0" ce="0" cis="1" cloc="0" cr="0.15" csz="1" dit="2" eloc="5" impl="0" lloc="3" loc="11" ncloc="11" noam="1" nocc="0" nom="1" noom="0" npm="1" rcr="0.21375" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Tests/Controller/DefaultControllerTest.php"/>
+      <method name="testIndex" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="3" loc="8" ncloc="8" npath="1"/>
+    </class>
+    <class name="OpBancaireControllerTest" ca="0" cbo="0" ce="0" cis="0" cloc="0" cr="0.15" csz="0" dit="2" eloc="0" impl="0" lloc="0" loc="3" ncloc="3" noam="0" nocc="0" nom="0" noom="0" npm="0" rcr="0.21375" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/Tests/Controller/OpBancaireControllerTest.php"/>
+    </class>
+  </package>
+  <package name="Acme\UserBundle" cr="0.15" noc="1" nof="0" noi="0" nom="0" rcr="0.2775">
+    <class name="UserBundle" ca="0" cbo="0" ce="0" cis="0" cloc="0" cr="0.15" csz="0" dit="2" eloc="0" impl="0" lloc="0" loc="4" ncloc="4" noam="0" nocc="0" nom="0" noom="0" npm="0" rcr="0.2775" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="/home/guiguinox/devWeb/sf2ProjetGroupeInsset/src/Acme/UserBundle/UserBundle.php"/>
+    </class>
+  </package>
+</metrics>
