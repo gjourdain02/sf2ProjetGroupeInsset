@@ -1,0 +1,39 @@
+{% extends "UserBundle::layout.html.twig" %}
+
+{% block title %}Gitlin - Compte Bancaire{% endblock %}
+{% block contenu %}
+
+
+    <div class="container">
+        <div class="panel panel-info" >
+            <div class="panel-heading"> Creation d'un nouveau compte bancaire </div>
+            <form name="acme_userbundle_comptetype aaa" method="post" action="">
+
+                <div id="acme_userbundle_comptetype">
+                    <div class="panel-body">
+                        <div>
+                            {{ form_row(form.nom) }}
+                            <!-- <label for="acme_userbundle_comptetype_nom" class="required">Nom</label>
+                           <input type="text" id="acme_userbundle_comptetype_nom" name="acme_userbundle_comptetype[nom]" required="required" /> -->
+                        </div>
+                        <div>
+                            {{ form_row(form.numeroCompte) }}
+                            <!-- <label for="acme_userbundle_comptetype_numeroCompte" class="required">Numero compte</label>
+                             <input type="text" id="acme_userbundle_comptetype_numeroCompte" name="acme_userbundle_comptetype[numeroCompte]" required="required" /> -->
+                        </div>
+                        <div>
+                            {{ form_row(form.actif) }}
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div>
+                            <button type="submit" id="acme_userbundle_comptetype_save" name="acme_userbundle_comptetype[save]">Save</button>
+                        </div>
+                    </div>
+                    {{ form_row(form._token) }}
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

@@ -163,7 +163,7 @@ class CompteController extends Controller
 
         }
 
-        return $this->render('UserBundle:Compte:creer.html.twig', array(
+        return $this->render('UserBundle:Compte:modif.html.twig', array(
             'form' => $form->createView(),
         ));
     }

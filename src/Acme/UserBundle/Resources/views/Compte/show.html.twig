@@ -16,28 +16,30 @@
                     </tr>
 
                     {% for compte in comptes %}
-                        <tr>
-                            <td>{{ compte.nom }}</td>
-                            <td>{{ compte.numeroCompte }}</td>
+                        {% if compte.actif == 1 %}
+                            <tr>
+                                <td>{{ compte.nom }}</td>
+                                <td>{{ compte.numeroCompte }}</td>
 
 
-                            <td><a href="{{ path('supprCompte', {'id' : compte.id} )}}"
-                                   class="close confirm-del-fiche" >
-                                    <span class="glyphicon glyphicon-remove-circle"></span>
-                                </a>
-                            </td>
+                                <td><a href="{{ path('supprCompte', {'id' : compte.id} )}}"
+                                       class="close confirm-del-fiche" >
+                                        <span class="glyphicon glyphicon-remove-circle"></span>
+                                    </a>
+                                </td>
 
-                            <td><a href="{{ path('modifCompte', {'id' : compte.id} )}}"
-                                   class="close confirm-del-fiche" >
-                                    <span class="glyphicon glyphicon-wrench"></span>
-                                </a>
-                            </td>
-                            <td><a href="{{ path('detailCompte', {'id' : compte.id} )}}"
-                                   class="close confirm-del-fiche" >
-                                    <span class="glyphicon glyphicon-wrench"></span>
-                                </a>
-                            </td>
-                        </tr>
+                                <td><a href="{{ path('modifCompte', {'id' : compte.id} )}}"
+                                       class="close confirm-del-fiche" >
+                                        <span class="glyphicon glyphicon-wrench"></span>
+                                    </a>
+                                </td>
+                                <td><a href="{{ path('detailCompte', {'id' : compte.id} )}}"
+                                       class="close confirm-del-fiche" >
+                                        <span class="glyphicon glyphicon-wrench"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                        {% endif %}
                     {% endfor %}
                 </table>
             </div>
