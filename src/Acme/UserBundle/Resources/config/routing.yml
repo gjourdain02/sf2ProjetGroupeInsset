@@ -1,3 +1,8 @@
+#Route pour les vues de base (index)
+index :
+    pattern:  /
+    defaults: { _controller: UserBundle:Index:index }
+
 # Route pour la gestion des comptes bancaires
 creerCompte:
     pattern:  /compte/creer
@@ -23,3 +28,5 @@ creerOperation:
 supprOperation:
     pattern:  /opbancaire/suppr/{id}
     defaults: { _controller: UserBundle:OpBancaire:suppr }
+
+

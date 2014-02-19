@@ -1,1 +1,5 @@
 Il vous reste {{ solde }} &euro;
+
+{% for compte in comptes %}
+    {{ compte.nom }}
+{% endfor %}
