@@ -37,13 +37,14 @@ class CompteController extends Controller
                 'Aucun compte trouvé pour cet utilisateur : '.$user
             );
         }
+        for($i=0;$i<sizeof($compte);$i++)
+        {
+            $soldeRes = $this->soldeCompte($compte[$i]);
+            $soldeOp[$i]['solde'] = $soldeRes['solde'];
+            $soldeOp[$i]['operations'] = $soldeRes['operations'];
+        }
 
-        $op = $this->getDoctrine()
-            ->getRepository('UserBundle:OperationBancaire')
-            ->findByCompte($compte[0]);
-        //var_dump($this->soldeCompte($compte[0])['operations']);
-        return $this->render('UserBundle:Compte:show.html.twig', array('solde' => $this->soldeCompte($compte[0])['solde'],
-            'operations' => $this->soldeCompte($compte[0])['operations'], 'comptes' => $compte));
+        return $this->render('UserBundle:Compte:show.html.twig', array('soldeOp' => $soldeOp, 'comptes' => $compte));
     }
 
     /**

@@ -6,8 +6,6 @@
  * Time: 14:26
  */
 
-
-
 namespace Acme\UserBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;

@@ -9,7 +9,7 @@
                     <tr>
                         <th>Nom</th>
                         <th>Numéro</th>
-
+                        <th>Solde</th>
                         <th>&nbsp</th>
                         <th>&nbsp</th>
                         <th>&nbsp</th>
@@ -18,9 +18,9 @@
                     {% for compte in comptes %}
                         {% if compte.actif == 1 %}
                             <tr>
-                                <td>{{ compte.nom }}</td>
+                                <td>{{ compte.nom }} - {{loop.index - 1}}</td>
                                 <td>{{ compte.numeroCompte }}</td>
-
+                                <td>{{ soldeOp[loop.index-1]['solde'] }}</td>
 
                                 <td><a href="{{ path('supprCompte', {'id' : compte.id} )}}"
                                        class="close confirm-del-fiche" >
