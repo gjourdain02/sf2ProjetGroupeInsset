@@ -7,12 +7,12 @@
             <div class="col-md-12">
                 <table class="table">
                     <tr>
-                        <th>Nom</th>
-                        <th>Numéro</th>
-                        <th>Solde</th>
-                        <th>&nbsp</th>
-                        <th>&nbsp</th>
-                        <th>&nbsp</th>
+                        <th style="width: 30%;">Nom</th>
+                        <th style="width: 20%;">Numéro</th>
+                        <th style="width: 20%;">Solde</th>
+                        <th style="width: 10%;">Supprimer</th>
+                        <th style="width: 10%;">Modifier</th>
+                        <th style="width: 10%;">Détails</th>
                     </tr>
 
                     {% for compte in comptes %}
@@ -22,20 +22,17 @@
                                 <td>{{ compte.numeroCompte }}</td>
                                 <td>{{ soldeOp[loop.index-1]['solde'] }}</td>
 
-                                <td><a href="{{ path('supprCompte', {'id' : compte.id} )}}"
-                                       class="close confirm-del-fiche" >
-                                        <span class="glyphicon glyphicon-remove-circle"></span>
+                                <td>
+                                    <a href="{{ path('supprCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-remove-circle"></span>
                                     </a>
                                 </td>
 
-                                <td><a href="{{ path('modifCompte', {'id' : compte.id} )}}"
-                                       class="close confirm-del-fiche" >
-                                        <span class="glyphicon glyphicon-wrench"></span>
+                                <td>
+                                    <a href="{{ path('modifCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-wrench"></span>
                                     </a>
                                 </td>
-                                <td><a href="{{ path('detailCompte', {'id' : compte.id} )}}"
-                                       class="close confirm-del-fiche" >
-                                        <span class="glyphicon glyphicon-wrench"></span>
+                                <td>
+                                    <a href="{{ path('detailCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-wrench"></span>
                                     </a>
                                 </td>
                             </tr>
