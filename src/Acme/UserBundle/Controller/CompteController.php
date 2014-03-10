@@ -181,7 +181,21 @@ class CompteController extends Controller
                 'Aucun produit trouvé pour cet id : '.$id
             );
         }
+        $opBancaire = $this->getDoctrine()
+            ->getRepository('UserBundle:OperationBancaire')
+            ->findByCompte($compte);
         $em = $this->getDoctrine()->getManager();
+        for($i = 0;$i<count($opBancaire);$i++)
+        {
+            $em->remove($opBancaire[$i]);
+        }
+        $opPeriodique = $this->getDoctrine()
+            ->getRepository('UserBundle:OperationPeriodique')
+            ->findByCompte($compte);
+        for($i = 0;$i<count($opPeriodique);$i++)
+        {
+            $em->remove($opPeriodique[$i]);
+        }
         $em->remove($compte);
         $em->flush();
 
