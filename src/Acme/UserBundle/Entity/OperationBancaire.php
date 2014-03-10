@@ -54,7 +54,7 @@ class OperationBancaire
 
     /**
      * @var Type
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="boolean")
      */
     protected $type;
 
