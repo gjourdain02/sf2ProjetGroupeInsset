@@ -7,6 +7,8 @@ use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 
 use Acme\UserBundle\Entity\Categorie;
+use Acme\UserBundle\Entity\Compte;
+
 
 
 /**
@@ -35,10 +37,10 @@ class OperationBancaire
     protected $nom;
 
     /**
-     * @var Compte
-     * @ORM\ManyToOne(targetEntity="Compte")
-     **/
-    protected $compte;
+     * @ORM\ManyToOne(targetEntity="Compte", inversedBy="operationBancaire", cascade={"remove"})
+     * @ORM\JoinColumn(name="compte_id", referencedColumnName="id")
+     */
+    protected $compteId;
 
     /**
      * @var Categorie
@@ -76,7 +78,6 @@ class OperationBancaire
      * @ORM\JoinColumn(name="op_periodique_id", referencedColumnName="id")
      **/
     protected $operationPeriodique;
-
 
     /**
      * Get id
@@ -137,7 +138,7 @@ class OperationBancaire
     /**
      * Set type
      *
-     * @param integer $type
+     * @param boolean $type
      * @return OperationBancaire
      */
     public function setType($type)
@@ -150,7 +151,7 @@ class OperationBancaire
     /**
      * Get type
      *
-     * @return integer 
+     * @return boolean 
      */
     public function getType()
     {
@@ -204,48 +205,55 @@ class OperationBancaire
     }
 
     /**
-     * Set compte
+     * Set compteId
      *
-     * @param \Acme\UserBundle\Entity\Compte $compte
+     * @param \Acme\UserBundle\Entity\Compte $compteId
      * @return OperationBancaire
      */
-    public function setCompte(\Acme\UserBundle\Entity\Compte $compte = null)
+    public function setCompteId(\Acme\UserBundle\Entity\Compte $compteId = null)
     {
-        $this->compte = $compte;
+        $this->compteId = $compteId;
 
         return $this;
     }
 
     /**
-     * Get compte
+     * Get compteId
      *
      * @return \Acme\UserBundle\Entity\Compte 
      */
-    public function getCompte()
+    public function getCompteId()
     {
-        return $this->compte;
+        return $this->compteId;
     }
 
     /**
-     * @param Acme\UserBundle\Entity\Categorie $categorie
+     * Add categories
+     *
+     * @param \Acme\UserBundle\Entity\Categorie $categories
      * @return OperationBancaire
      */
-    public function addCategorie(\Acme\UserBundle\Entity\Categorie $categorie)
+    public function addCategory(\Acme\UserBundle\Entity\Categorie $categories)
     {
-        $this->categories[] = $categorie;
+        $this->categories[] = $categories;
+
         return $this;
     }
 
     /**
-     * @param Acme\UserBundle\Entity\Categorie $categorie
+     * Remove categories
+     *
+     * @param \Acme\UserBundle\Entity\Categorie $categories
      */
-    public function removeCategorie(\Acme\UserBundle\Entity\Categorie $categorie)
+    public function removeCategory(\Acme\UserBundle\Entity\Categorie $categories)
     {
-        $this->categories->removeElement($categorie);
+        $this->categories->removeElement($categories);
     }
 
     /**
-     * @return Doctrine\Common\Collections\Collection
+     * Get categories
+     *
+     * @return \Doctrine\Common\Collections\Collection 
      */
     public function getCategories()
     {
@@ -273,5 +281,28 @@ class OperationBancaire
     public function getOperationPeriodique()
     {
         return $this->operationPeriodique;
+    }
+
+    /**
+     * Set compte
+     *
+     * @param \Acme\UserBundle\Entity\Compte $compte
+     * @return OperationBancaire
+     */
+    public function setCompte(\Acme\UserBundle\Entity\Compte $compte = null)
+    {
+        $this->compte = $compte;
+
+        return $this;
+    }
+
+    /**
+     * Get compte
+     *
+     * @return \Acme\UserBundle\Entity\Compte 
+     */
+    public function getCompte()
+    {
+        return $this->compte;
     }
 }

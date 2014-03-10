@@ -40,6 +40,12 @@ class Compte
      */
     protected $numeroCompte;
 
+
+    /**
+     * @ORM\OneToMany(targetEntity="OperationBancaire", mappedBy="compteId", cascade={"remove", "persist"})
+     */
+    protected $operationBancaire;
+
     /**
      * @var User
      * @ORM\ManyToOne(targetEntity="User")
@@ -57,32 +63,31 @@ class Compte
      *
      * @return integer 
      */
-    public function getId()
+    
+
+    public static function loadValidatorMetadata(ClassMetadata $metadata)
     {
-        return $this->id;
+        $metadata->addPropertyConstraint('nom', new NotBlank());
+        $metadata->addPropertyConstraint('nom', new Assert\Regex(array(
+            'pattern' => '/^[a-zA-z0-9]+/',
+            'message' => 'Le champ ne peut contenir que des caractères alphanumeriques',
+        )));
+
+        $metadata->addPropertyConstraint('numeroCompte', new NotBlank());
+        $metadata->addPropertyConstraint('numeroCompte', new Assert\Regex(array(
+            'pattern' => '/^[a-zA-z0-9]+/',
+            'message' => 'Le champ ne peut contenir que des caractères alphanumeriques',
+        )));
     }
 
     /**
-     * Get actif
+     * Get id
      *
      * @return integer 
      */
-    public function getActif()
+    public function getId()
     {
-        return $this->actif;
-    }
-
-    /**
-     * Set actif
-     *
-     * @param integer $actif
-     * @return Compte
-     */
-    public function setActif($actif)
-    {
-        $this->actif = $actif;
-
-        return $this;
+        return $this->id;
     }
 
     /**
@@ -132,6 +137,62 @@ class Compte
     }
 
     /**
+     * Set actif
+     *
+     * @param boolean $actif
+     * @return Compte
+     */
+    public function setActif($actif)
+    {
+        $this->actif = $actif;
+
+        return $this;
+    }
+
+    /**
+     * Get actif
+     *
+     * @return boolean 
+     */
+    public function getActif()
+    {
+        return $this->actif;
+    }
+
+    /**
+     * Add operationBancaire
+     *
+     * @param \Acme\UserBundle\Entity\OperationBancaire $operationBancaire
+     * @return Compte
+     */
+    public function addOperationBancaire(\Acme\UserBundle\Entity\OperationBancaire $operationBancaire)
+    {
+        $this->operationBancaire[] = $operationBancaire;
+
+        return $this;
+    }
+
+    /**
+     * Remove operationBancaire
+     *
+     * @param \Acme\UserBundle\Entity\OperationBancaire $operationBancaire
+     */
+    public function removeOperationBancaire(\Acme\UserBundle\Entity\OperationBancaire $operationBancaire)
+    {
+        $this->operationBancaire->removeElement($operationBancaire);
+    }
+
+    /**
+     * Get operationBancaire
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getOperationBancaire()
+    {
+        return $this->operationBancaire;
+    }
+
+    /**
      * Set user
      *
      * @param \Acme\UserBundle\Entity\User $user
@@ -152,20 +213,5 @@ class Compte
     public function getUser()
     {
         return $this->user;
-    }
-
-    public static function loadValidatorMetadata(ClassMetadata $metadata)
-    {
-        $metadata->addPropertyConstraint('nom', new NotBlank());
-        $metadata->addPropertyConstraint('nom', new Assert\Regex(array(
-            'pattern' => '/^[a-zA-z0-9]+/',
-            'message' => 'Le champ ne peut contenir que des caractères alphanumeriques',
-        )));
-
-        $metadata->addPropertyConstraint('numeroCompte', new NotBlank());
-        $metadata->addPropertyConstraint('numeroCompte', new Assert\Regex(array(
-            'pattern' => '/^[a-zA-z0-9]+/',
-            'message' => 'Le champ ne peut contenir que des caractères alphanumeriques',
-        )));
     }
 }

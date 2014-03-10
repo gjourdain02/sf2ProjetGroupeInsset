@@ -58,7 +58,7 @@ class CompteController extends Controller
     {
         $operations = $this->getDoctrine()
             ->getRepository('UserBundle:OperationBancaire')
-            ->findByCompte($compte);
+            ->findByCompteId($compte);
         $solde = 0;
         foreach ($operations as $k => $v)
         {
@@ -88,7 +88,7 @@ class CompteController extends Controller
 
         $ops = $this->getDoctrine()
             ->getRepository('UserBundle:OperationBancaire')
-            ->findByCompte($compte);
+            ->findByCompteId($compte);
 
         return $this->render('UserBundle:Compte:detail.html.twig',
             array('solde' => $this->soldeCompte($compte)['solde'],
@@ -181,21 +181,8 @@ class CompteController extends Controller
                 'Aucun produit trouvé pour cet id : '.$id
             );
         }
-        $opBancaire = $this->getDoctrine()
-            ->getRepository('UserBundle:OperationBancaire')
-            ->findByCompte($compte);
+
         $em = $this->getDoctrine()->getManager();
-        for($i = 0;$i<count($opBancaire);$i++)
-        {
-            $em->remove($opBancaire[$i]);
-        }
-        $opPeriodique = $this->getDoctrine()
-            ->getRepository('UserBundle:OperationPeriodique')
-            ->findByCompte($compte);
-        for($i = 0;$i<count($opPeriodique);$i++)
-        {
-            $em->remove($opPeriodique[$i]);
-        }
         $em->remove($compte);
         $em->flush();
 

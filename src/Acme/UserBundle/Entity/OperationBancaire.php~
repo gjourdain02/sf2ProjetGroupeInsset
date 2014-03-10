@@ -7,6 +7,8 @@ use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 
 use Acme\UserBundle\Entity\Categorie;
+use Acme\UserBundle\Entity\Compte;
+
 
 
 /**
@@ -25,7 +27,7 @@ class OperationBancaire
 
     public function __construct()
     {
-
+        $this->categories   = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -35,16 +37,16 @@ class OperationBancaire
     protected $nom;
 
     /**
-     * @var Compte
-     * @ORM\ManyToOne(targetEntity="Compte")
-     **/
-    protected $compte;
+     * @ORM\ManyToOne(targetEntity="Compte", inversedBy="operationBancaire", cascade={"remove"})
+     * @ORM\JoinColumn(name="compte_id", referencedColumnName="id")
+     */
+    protected $compteId;
 
     /**
      * @var Categorie
-     * @ORM\ManyToOne(targetEntity="Categorie")
+     * @ORM\ManyToMany(targetEntity="Categorie")
      **/
-    protected $categorie;
+    protected $categories;
 
     /**
      * @var DateOperation
@@ -54,7 +56,7 @@ class OperationBancaire
 
     /**
      * @var Type
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="boolean")
      */
     protected $type;
 
@@ -77,4 +79,230 @@ class OperationBancaire
      **/
     protected $operationPeriodique;
 
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     * @return OperationBancaire
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string 
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set dateOperation
+     *
+     * @param \DateTime $dateOperation
+     * @return OperationBancaire
+     */
+    public function setDateOperation($dateOperation)
+    {
+        $this->dateOperation = $dateOperation;
+
+        return $this;
+    }
+
+    /**
+     * Get dateOperation
+     *
+     * @return \DateTime 
+     */
+    public function getDateOperation()
+    {
+        return $this->dateOperation;
+    }
+
+    /**
+     * Set type
+     *
+     * @param boolean $type
+     * @return OperationBancaire
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * Get type
+     *
+     * @return boolean 
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * Set montant
+     *
+     * @param string $montant
+     * @return OperationBancaire
+     */
+    public function setMontant($montant)
+    {
+        $this->montant = $montant;
+
+        return $this;
+    }
+
+    /**
+     * Get montant
+     *
+     * @return string 
+     */
+    public function getMontant()
+    {
+        return $this->montant;
+    }
+
+    /**
+     * Set verif
+     *
+     * @param integer $verif
+     * @return OperationBancaire
+     */
+    public function setVerif($verif)
+    {
+        $this->verif = $verif;
+
+        return $this;
+    }
+
+    /**
+     * Get verif
+     *
+     * @return integer 
+     */
+    public function getVerif()
+    {
+        return $this->verif;
+    }
+
+    /**
+     * Set compteId
+     *
+     * @param \Acme\UserBundle\Entity\Compte $compteId
+     * @return OperationBancaire
+     */
+    public function setCompteId(\Acme\UserBundle\Entity\Compte $compteId = null)
+    {
+        $this->compteId = $compteId;
+
+        return $this;
+    }
+
+    /**
+     * Get compteId
+     *
+     * @return \Acme\UserBundle\Entity\Compte 
+     */
+    public function getCompteId()
+    {
+        return $this->compteId;
+    }
+
+    /**
+     * Add categories
+     *
+     * @param \Acme\UserBundle\Entity\Categorie $categories
+     * @return OperationBancaire
+     */
+    public function addCategory(\Acme\UserBundle\Entity\Categorie $categories)
+    {
+        $this->categories[] = $categories;
+
+        return $this;
+    }
+
+    /**
+     * Remove categories
+     *
+     * @param \Acme\UserBundle\Entity\Categorie $categories
+     */
+    public function removeCategory(\Acme\UserBundle\Entity\Categorie $categories)
+    {
+        $this->categories->removeElement($categories);
+    }
+
+    /**
+     * Get categories
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCategories()
+    {
+        return $this->categories;
+    }
+
+    /**
+     * Set operationPeriodique
+     *
+     * @param \Acme\UserBundle\Entity\OperationPeriodique $operationPeriodique
+     * @return OperationBancaire
+     */
+    public function setOperationPeriodique(\Acme\UserBundle\Entity\OperationPeriodique $operationPeriodique = null)
+    {
+        $this->operationPeriodique = $operationPeriodique;
+
+        return $this;
+    }
+
+    /**
+     * Get operationPeriodique
+     *
+     * @return \Acme\UserBundle\Entity\OperationPeriodique 
+     */
+    public function getOperationPeriodique()
+    {
+        return $this->operationPeriodique;
+    }
+
+    /**
+     * Set compte
+     *
+     * @param \Acme\UserBundle\Entity\Compte $compte
+     * @return OperationBancaire
+     */
+    public function setCompte(\Acme\UserBundle\Entity\Compte $compte = null)
+    {
+        $this->compte = $compte;
+
+        return $this;
+    }
+
+    /**
+     * Get compte
+     *
+     * @return \Acme\UserBundle\Entity\Compte 
+     */
+    public function getCompte()
+    {
+        return $this->compte;
+    }
 }
