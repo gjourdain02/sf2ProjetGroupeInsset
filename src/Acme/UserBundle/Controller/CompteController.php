@@ -141,7 +141,7 @@ class CompteController extends Controller
 
         $form = $this->createForm(new CompteType(), $compte);
         $form->add('actif', 'checkbox', array(
-            'label'     => 'Activez ',
+            'label'     => 'Activé ',
             'required'  => false,
         ) )
             ->add('save', 'submit');
