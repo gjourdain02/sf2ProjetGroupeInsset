@@ -90,9 +90,20 @@ class CompteController extends Controller
             ->getRepository('UserBundle:OperationBancaire')
             ->findByCompteId($compte);
 
+        $seuil = $this->getDoctrine()
+            ->getRepository('UserBundle:Seuil')
+            ->findOneByCompte($compte);
+
+        $pasSeuil = false;
+        if (!$seuil){
+            $pasSeuil = true;
+        }
+
         return $this->render('UserBundle:Compte:detail.html.twig',
             array('solde' => $this->soldeCompte($compte)['solde'],
                   'operations' => $ops,
+                  'passeuil' => $pasSeuil,
+                  'seuil' => $seuil,
                   'compte' => $compte));
 
     }

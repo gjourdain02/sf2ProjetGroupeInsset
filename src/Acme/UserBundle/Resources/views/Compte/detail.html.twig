@@ -8,6 +8,14 @@
             <div class="col-md-12">
                 {{ compte.nom }} {{ compte.numeroCompte }} {{solde}}
 
+                {% if passeuil %}
+                <a href="{{ path('creerSeuil', {'id' : compte.id} )}}"  >
+                    Pas de seuil associez </a>
+                {% else %}
+                    <a href="{{ path('modifSeuil', {'id' : seuil.id} )}}"  >
+                        Seuil : {{ seuil.seuil }} </a>
+                {% endif %}
+
                 <a href="{{ path('creerOperation', {'id' : compte.id} )}}" class="close confirm-del-fiche" ><span class="glyphicon glyphicon-plus"></span>
                 </a>
             </div>
