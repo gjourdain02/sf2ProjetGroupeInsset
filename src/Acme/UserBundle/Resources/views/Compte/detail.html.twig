@@ -27,7 +27,13 @@
 
                         <tr>
                             <td>{{ operation.nom }}</td>
-                            <td>{{ operation.montant }}</td>
+                            <td>
+                            {% if operation.type %}
+                                +
+                            {% else %}
+                                -
+                            {% endif %}
+                            {{ operation.montant }}</td>
 
 
                             <td>
