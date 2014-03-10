@@ -34,4 +34,14 @@ supprOperation:
     pattern:  /opbancaire/suppr/{id}
     defaults: { _controller: UserBundle:OpBancaire:suppr }
 
+# Route pour la gestion des seuils des comptes
+
+creerSeuil:
+    pattern:  /seuil/creer/{id}
+    defaults: { _controller: UserBundle:Seuil:creer }
+
+modifSeuil:
+  pattern:  /seuil/modif/{id}
+  defaults: { _controller: UserBundle:Seuil:modif }
+
 
