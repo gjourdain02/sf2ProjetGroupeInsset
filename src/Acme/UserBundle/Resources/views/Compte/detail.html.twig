@@ -3,7 +3,7 @@
 {% block title %}Gitlin - {{ compte.nom }}{% endblock %}
 {% block contenu %}
 
-    {{ compte.nom }} {{ compte.numeroCompte }}
+    {{ compte.nom }} {{ compte.numeroCompte }} Solde  : {{ solde }}
 
 <a href="{{ path('creerOperation', {'id' : compte.id} )}}"
    class="close confirm-del-fiche" >

@@ -29,6 +29,10 @@ class OpBancaireController extends Controller
 
 
         $form = $this->createForm(new OpBancaireType(), $OpBancaire);
+        $form->add('type', 'checkbox', array(
+            'label'     => 'Crédit ?',
+            'required'  => false,
+        ) );
         $form->add('save', 'submit');
 
         if ($request->isMethod('POST')) {
@@ -38,7 +42,7 @@ class OpBancaireController extends Controller
                 $em = $this->getDoctrine()->getManager();
                 $reg = $form->getData();
                 $reg->setDateOperation(new \DateTime());
-                $reg->setType(1);
+
                 $reg->setCompte($compte);
                 $reg->setVerif(1);
 
