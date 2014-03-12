@@ -77,7 +77,7 @@ class SeuilController extends Controller
                 $em->persist($seuil);
                 $em->flush();
 
-                return $this->redirect($this->generateUrl('detailCompte', array( 'id'=>$id)));
+                return $this->redirect($this->generateUrl('montrerCompte'));
             }
 
 

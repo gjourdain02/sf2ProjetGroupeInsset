@@ -44,6 +44,20 @@
                     <a href="{{ path('montrerCompte') }}" class="navbar-link">Mes comptes</a>
                 </li>
 
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+                    <li>
+                        <a href="{{ path('fos_user_security_logout') }}">
+                            {{ 'Deconnexion'|trans({}, 'FOSUserBundle') }}
+                        </a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="{{ path('fos_user_security_login') }}">{{ 'Connexion'|trans({}, 'FOSUserBundle') }}</a>
+                    </li>
+                {% endif %}
+
+
 
             </ul>
         </div>
@@ -51,6 +65,8 @@
 
 
     {% block contenu %}
+
+        {% block fos_user_content %}{% endblock %}
     {% endblock %}
 
 {% endblock %}
