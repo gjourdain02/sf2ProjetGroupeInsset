@@ -92,7 +92,7 @@ class CompteController extends Controller
 
         $seuil = $this->getDoctrine()
             ->getRepository('UserBundle:Seuil')
-            ->findOneByCompte($compte);
+            ->findOneByCompteId($compte);
 
         $pasSeuil = false;
         if (!$seuil){

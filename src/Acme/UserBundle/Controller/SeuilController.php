@@ -32,7 +32,7 @@ class SeuilController extends Controller
             $reg = $form->getData();
 
 
-            $reg->setCompte($compte);
+            $reg->setCompteId($compte);
 
             $em->persist($reg);
             $em->flush();
