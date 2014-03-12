@@ -75,6 +75,7 @@ class CompteController extends Controller
     }
 
     public function detailAction($id){
+        $user = $this->container->get('security.context')->getToken()->getUser();
         $compte = $this->getDoctrine()
             ->getRepository('UserBundle:Compte')
             ->find($id);
@@ -84,6 +85,18 @@ class CompteController extends Controller
             throw $this->createNotFoundException(
                 'Aucun compte trouvé pour cet id : '.$id
             );
+
+        }
+        if ($compte->getUser()->getId() != $user->getId())
+        {
+            /*throw $this->createNotFoundException(
+                'Ceci n\'est pas votre compte !'
+            );*/
+            $this->get('session')->getFlashBag()->add(
+                'pasSonCompte',
+                'Vous ne pouvez acceder a un compte qui ne vous appartient pas'
+            );
+            return $this->redirect($this->generateUrl('montrerCompte'));
         }
 
         $ops = $this->getDoctrine()
