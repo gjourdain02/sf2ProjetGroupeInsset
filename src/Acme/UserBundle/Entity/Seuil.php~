@@ -31,9 +31,9 @@ class Seuil
     protected $seuil;
 
     /**
-     * @var Compte
-     * @ORM\ManyToOne(targetEntity="Compte")
-     **/
-    protected $compte;
+     * @ORM\ManyToOne(targetEntity="Compte", inversedBy="seuil", cascade={"remove"})
+     * @ORM\JoinColumn(name="compte_id", referencedColumnName="id")
+     */
+    protected $compteId;
 
 }

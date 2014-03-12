@@ -47,6 +47,11 @@ class Compte
     protected $operationBancaire;
 
     /**
+     * @ORM\OneToMany(targetEntity="Seuil", mappedBy="compteId", cascade={"remove", "persist"})
+     */
+    protected $seuil;
+
+    /**
      * @var User
      * @ORM\ManyToOne(targetEntity="User")
      **/
@@ -80,138 +85,5 @@ class Compte
         )));
     }
 
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set nom
-     *
-     * @param string $nom
-     * @return Compte
-     */
-    public function setNom($nom)
-    {
-        $this->nom = $nom;
-
-        return $this;
-    }
-
-    /**
-     * Get nom
-     *
-     * @return string 
-     */
-    public function getNom()
-    {
-        return $this->nom;
-    }
-
-    /**
-     * Set numeroCompte
-     *
-     * @param string $numeroCompte
-     * @return Compte
-     */
-    public function setNumeroCompte($numeroCompte)
-    {
-        $this->numeroCompte = $numeroCompte;
-
-        return $this;
-    }
-
-    /**
-     * Get numeroCompte
-     *
-     * @return string 
-     */
-    public function getNumeroCompte()
-    {
-        return $this->numeroCompte;
-    }
-
-    /**
-     * Set actif
-     *
-     * @param boolean $actif
-     * @return Compte
-     */
-    public function setActif($actif)
-    {
-        $this->actif = $actif;
-
-        return $this;
-    }
-
-    /**
-     * Get actif
-     *
-     * @return boolean 
-     */
-    public function getActif()
-    {
-        return $this->actif;
-    }
-
-    /**
-     * Add operationBancaire
-     *
-     * @param \Acme\UserBundle\Entity\OperationBancaire $operationBancaire
-     * @return Compte
-     */
-    public function addOperationBancaire(\Acme\UserBundle\Entity\OperationBancaire $operationBancaire)
-    {
-        $this->operationBancaire[] = $operationBancaire;
-
-        return $this;
-    }
-
-    /**
-     * Remove operationBancaire
-     *
-     * @param \Acme\UserBundle\Entity\OperationBancaire $operationBancaire
-     */
-    public function removeOperationBancaire(\Acme\UserBundle\Entity\OperationBancaire $operationBancaire)
-    {
-        $this->operationBancaire->removeElement($operationBancaire);
-    }
-
-    /**
-     * Get operationBancaire
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getOperationBancaire()
-    {
-        return $this->operationBancaire;
-    }
-
-    /**
-     * Set user
-     *
-     * @param \Acme\UserBundle\Entity\User $user
-     * @return Compte
-     */
-    public function setUser(\Acme\UserBundle\Entity\User $user = null)
-    {
-        $this->user = $user;
-
-        return $this;
-    }
-
-    /**
-     * Get user
-     *
-     * @return \Acme\UserBundle\Entity\User 
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
+    
 }

@@ -47,6 +47,11 @@ class Compte
     protected $operationBancaire;
 
     /**
+     * @ORM\OneToMany(targetEntity="Seuil", mappedBy="compteId", cascade={"remove", "persist"})
+     */
+    protected $seuil;
+
+    /**
      * @var User
      * @ORM\ManyToOne(targetEntity="User")
      **/
@@ -79,6 +84,8 @@ class Compte
             'message' => 'Le champ ne peut contenir que des caractères alphanumeriques',
         )));
     }
+
+    
 
     /**
      * Get id
@@ -190,6 +197,39 @@ class Compte
     public function getOperationBancaire()
     {
         return $this->operationBancaire;
+    }
+
+    /**
+     * Add seuil
+     *
+     * @param \Acme\UserBundle\Entity\Seuil $seuil
+     * @return Compte
+     */
+    public function addSeuil(\Acme\UserBundle\Entity\Seuil $seuil)
+    {
+        $this->seuil[] = $seuil;
+
+        return $this;
+    }
+
+    /**
+     * Remove seuil
+     *
+     * @param \Acme\UserBundle\Entity\Seuil $seuil
+     */
+    public function removeSeuil(\Acme\UserBundle\Entity\Seuil $seuil)
+    {
+        $this->seuil->removeElement($seuil);
+    }
+
+    /**
+     * Get seuil
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getSeuil()
+    {
+        return $this->seuil;
     }
 
     /**

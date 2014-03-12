@@ -31,10 +31,10 @@ class Seuil
     protected $seuil;
 
     /**
-     * @var Compte
-     * @ORM\ManyToOne(targetEntity="Compte")
-     **/
-    protected $compte;
+     * @ORM\ManyToOne(targetEntity="Compte", inversedBy="seuil", cascade={"remove"})
+     * @ORM\JoinColumn(name="compte_id", referencedColumnName="id")
+     */
+    protected $compteId;
 
 
     /**
@@ -71,25 +71,25 @@ class Seuil
     }
 
     /**
-     * Set compte
+     * Set compteId
      *
-     * @param \Acme\UserBundle\Entity\Compte $compte
+     * @param \Acme\UserBundle\Entity\Compte $compteId
      * @return Seuil
      */
-    public function setCompte(\Acme\UserBundle\Entity\Compte $compte = null)
+    public function setCompteId(\Acme\UserBundle\Entity\Compte $compteId = null)
     {
-        $this->compte = $compte;
+        $this->compteId = $compteId;
 
         return $this;
     }
 
     /**
-     * Get compte
+     * Get compteId
      *
      * @return \Acme\UserBundle\Entity\Compte 
      */
-    public function getCompte()
+    public function getCompteId()
     {
-        return $this->compte;
+        return $this->compteId;
     }
 }
