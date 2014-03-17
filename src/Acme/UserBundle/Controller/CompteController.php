@@ -37,11 +37,11 @@ class CompteController extends Controller
         {
             $pasCompte = true;
             return $this->render('UserBundle:Compte:show.html.twig', array(
-                
+
                 'pasCompte' => $pasCompte));
         }
 
-        var_dump($pasCompte);
+
         for($i=0;$i<sizeof($compte);$i++)
         {
             $soldeRes = $this->soldeCompte($compte[$i]);

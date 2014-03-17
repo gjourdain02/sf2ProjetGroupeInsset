@@ -1,7 +1,6 @@
 {% extends "UserBundle::layout.html.twig" %}
 
 {% block title %}Gitlin - Comptes Bancaires{% endblock %}
-
 {% block contenu %}
     <div class="container-fluid">
         <div class="row">
@@ -11,10 +10,10 @@
                         {{ flashMessage }}
                     </div>
                 {% endfor %}
-                
                 {% if pasCompte %}
-                    <a href="{{ path('creerCompte') }}" class="navbar-link">Vous n'avez pas encore de compte bancaires.</a>
+                    <a href="{{ path('creerCompte') }}" class="close confirm-del-fiche">Vous n'avez pas encore de compte bancaires.</a>
                 {% else %}
+                    <a href="{{ path('creerCompte') }}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-plus"></a>
                     <table class="table">
                         <tr>
                             <th style="width: 30%;">Nom</th>
@@ -53,4 +52,7 @@
             </div>
         </div>
     </div>
+
 {% endblock %}
+
+
