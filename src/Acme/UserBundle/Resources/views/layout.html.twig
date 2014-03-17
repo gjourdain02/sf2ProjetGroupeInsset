@@ -53,6 +53,9 @@
                     </li>
                 {% else %}
                     <li>
+                        <a href="{{ path('fos_user_registration_register') }}">{{ "S'inscrire"|trans({}, 'FOSUserBundle') }}</a>
+                    </li>
+                    <li>
                         <a href="{{ path('fos_user_security_login') }}">{{ 'Connexion'|trans({}, 'FOSUserBundle') }}</a>
                     </li>
                 {% endif %}

@@ -12,44 +12,42 @@
                 {% endfor %}
                 {% if pasCompte %}
                     <a href="{{ path('creerCompte') }}" class="navbar-link">Vous n'avez pas encore de compte bancaires.</a>
-
                 {% else %}
 
+                    <table class="table">
+                        <tr>
+                            <th style="width: 30%;">Nom</th>
+                            <th style="width: 20%;">Numéro</th>
+                            <th style="width: 20%;">Solde</th>
+                            <th style="width: 10%;">Supprimer</th>
+                            <th style="width: 10%;">Modifier</th>
+                            <th style="width: 10%;">Détails</th>
+                        </tr>
 
-                <table class="table">
-                    <tr>
-                        <th style="width: 30%;">Nom</th>
-                        <th style="width: 20%;">Numéro</th>
-                        <th style="width: 20%;">Solde</th>
-                        <th style="width: 10%;">Supprimer</th>
-                        <th style="width: 10%;">Modifier</th>
-                        <th style="width: 10%;">Détails</th>
-                    </tr>
+                        {% for compte in comptes %}
+                            {% if compte.actif == 1 %}
+                                <tr>
+                                    <td>{{ compte.nom }} - {{loop.index - 1}}</td>
+                                    <td>{{ compte.numeroCompte }}</td>
+                                    <td>{{ soldeOp[loop.index-1]['solde'] }}</td>
 
-                    {% for compte in comptes %}
-                        {% if compte.actif == 1 %}
-                            <tr>
-                                <td>{{ compte.nom }} - {{loop.index - 1}}</td>
-                                <td>{{ compte.numeroCompte }}</td>
-                                <td>{{ soldeOp[loop.index-1]['solde'] }}</td>
+                                    <td>
+                                        <a href="{{ path('supprCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-remove-circle"></span>
+                                        </a>
+                                    </td>
 
-                                <td>
-                                    <a href="{{ path('supprCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-remove-circle"></span>
-                                    </a>
-                                </td>
-
-                                <td>
-                                    <a href="{{ path('modifCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-wrench"></span>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="{{ path('detailCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-wrench"></span>
-                                    </a>
-                                </td>
-                            </tr>
-                        {% endif %}
-                    {% endfor %}
-                </table>
+                                    <td>
+                                        <a href="{{ path('modifCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-wrench"></span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="{{ path('detailCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-wrench"></span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            {% endif %}
+                        {% endfor %}
+                    </table>
                 {% endif %}
             </div>
         </div>

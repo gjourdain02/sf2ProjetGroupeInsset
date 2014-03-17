@@ -6,3 +6,5 @@ autoload.php
 /app/cache/*
 /app/logs/*
 /app/config/parameters.yml
+.sonar
+.idea
