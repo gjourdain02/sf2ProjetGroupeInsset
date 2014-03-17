@@ -11,9 +11,9 @@
                     </div>
                 {% endfor %}
                 {% if pasCompte %}
-                    <a href="{{ path('creerCompte') }}" class="navbar-link">Vous n'avez pas encore de compte bancaires.</a>
+                    <a href="{{ path('creerCompte') }}" class="close confirm-del-fiche">Vous n'avez pas encore de compte bancaires.</a>
                 {% else %}
-
+                    <a href="{{ path('creerCompte') }}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-plus"></a>
                     <table class="table">
                         <tr>
                             <th style="width: 30%;">Nom</th>
