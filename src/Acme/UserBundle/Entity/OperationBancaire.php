@@ -37,7 +37,7 @@ class OperationBancaire
     protected $nom;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Compte", inversedBy="operationBancaire", cascade={"remove"})
+     * @ORM\ManyToOne(targetEntity="Compte", inversedBy="operationBancaire")
      * @ORM\JoinColumn(name="compte_id", referencedColumnName="id")
      */
     protected $compteId;

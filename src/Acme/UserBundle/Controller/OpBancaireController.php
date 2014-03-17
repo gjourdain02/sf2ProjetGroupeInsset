@@ -15,6 +15,13 @@ use Acme\UserBundle\Entity\OperationPeriodique;
 
 class OpBancaireController extends Controller
 {
+    /**
+     * Cette fonction va creer une opération bancaire pour le compte bancaire selectionné
+     *
+     * @param Request $request
+     * @param $id id du compte bancaire
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     */
     public function creerAction(Request $request, $id)
     {
         $user = $this->container->get('security.context')->getToken()->getUser();
@@ -25,9 +32,9 @@ class OpBancaireController extends Controller
 
         $OpBancaire = new OperationBancaire();
         $opPeriodique = new OperationPeriodique();
-        //$opPeriodique->setId(0);
 
 
+        //appel du formulaire de creation d'opération
         $form = $this->createForm(new OpBancaireType(), $OpBancaire);
         $form->add('type', 'checkbox', array(
             'label'     => 'Crédit ?',
@@ -37,20 +44,19 @@ class OpBancaireController extends Controller
 
         if ($request->isMethod('POST')) {
             $form->bind($request);
-            //if ($form->isValid()) {
-                // fait quelque chose comme sauvegarder la tâche dans la bdd
-                $em = $this->getDoctrine()->getManager();
-                $reg = $form->getData();
-                $reg->setDateOperation(new \DateTime());
 
-                $reg->setCompteId($compte);
-                $reg->setVerif(1);
+            $em = $this->getDoctrine()->getManager();
+            $reg = $form->getData();
+            $reg->setDateOperation(new \DateTime());
+
+            $reg->setCompteId($compte);
+            $reg->setVerif(1);
 
 
-                $em->persist($reg);
-                $em->flush();
-                return $this->redirect($this->generateUrl('detailCompte', array( 'id'=>$id)));
-            //}
+            $em->persist($reg);
+            $em->flush();
+            return $this->redirect($this->generateUrl('detailCompte', array( 'id'=>$id)));
+
         }
 
         return $this->render('UserBundle:OpBancaire:creer.html.twig', array(

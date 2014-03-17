@@ -14,6 +14,11 @@ use Acme\UserBundle\Entity\Seuil;
 
 class SeuilController extends Controller
 {
+    /** Crée un seuil pour le compte bancaire
+     * @param Request $request
+     * @param $id compte bancaire auquel on veut associer le seuil
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     */
     public function creerAction(Request $request, $id){
         $user = $this->container->get('security.context')->getToken()->getUser();
 
@@ -45,7 +50,11 @@ class SeuilController extends Controller
         ));
     }
 
-
+    /** Permets de modifier la valeur du seuil
+     * @param $id seuil a modifié
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
+     */
     public function modifAction($id){
         $seuil = $this->getDoctrine()
             ->getRepository('UserBundle:Seuil')
@@ -60,10 +69,7 @@ class SeuilController extends Controller
             );
         }
 
-
-
         $form = $this->createForm(new SeuilType(), $seuil);
-
 
 
         $request = $this->get('request');
