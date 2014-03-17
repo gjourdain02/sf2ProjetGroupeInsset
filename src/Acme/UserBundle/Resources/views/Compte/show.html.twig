@@ -10,6 +10,12 @@
                         {{ flashMessage }}
                     </div>
                 {% endfor %}
+                {% if pasCompte %}
+                    <a href="{{ path('creerCompte') }}" class="navbar-link">Vous n'avez pas encore de compte bancaires.</a>
+
+                {% else %}
+
+
                 <table class="table">
                     <tr>
                         <th style="width: 30%;">Nom</th>
@@ -44,6 +50,7 @@
                         {% endif %}
                     {% endfor %}
                 </table>
+                {% endif %}
             </div>
         </div>
     </div>

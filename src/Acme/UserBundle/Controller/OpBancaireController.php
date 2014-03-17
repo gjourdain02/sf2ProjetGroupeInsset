@@ -43,7 +43,7 @@ class OpBancaireController extends Controller
                 $reg = $form->getData();
                 $reg->setDateOperation(new \DateTime());
 
-                $reg->setCompte($compte);
+                $reg->setCompteId($compte);
                 $reg->setVerif(1);
 
 
