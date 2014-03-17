@@ -24,7 +24,11 @@ class OpBancaireController extends Controller
      */
     public function creerAction(Request $request, $id)
     {
+        //verification de l'identification au compte
         $user = $this->container->get('security.context')->getToken()->getUser();
+        if (!is_object($user) ){
+            return $this->redirect($this->generateUrl('fos_user_security_login'));
+        }
 
         $repository = $this->getDoctrine()
             ->getRepository('UserBundle:Compte');
@@ -66,6 +70,12 @@ class OpBancaireController extends Controller
 
     public function supprAction($id)
     {
+        //verification de l'identification au compte
+        $user = $this->container->get('security.context')->getToken()->getUser();
+        if (!is_object($user) ){
+            return $this->redirect($this->generateUrl('fos_user_security_login'));
+        }
+
         $operation = $this->getDoctrine()
             ->getRepository('UserBundle:OperationBancaire')
             ->find($id);

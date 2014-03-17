@@ -15,9 +15,7 @@ class CompteController extends Controller
 {
     /**
      * Cette fonction va afficher touts les compte pour le client qui est connecté
-     * c'est la qu'il pourra accéder a la modification, suppression d'un compte
-     * mais aussi la possibilité de voir plus précisement un compte en particulier en cliquant dessus.
-     *
+     * c'est la qu'il pourra accéder aux différentes actions
      *
      * @return \Symfony\Component\HttpFoundation\Response
      * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
@@ -25,7 +23,9 @@ class CompteController extends Controller
     public function showAction()
     {
         $user = $this->container->get('security.context')->getToken()->getUser();
-
+        if (!is_object($user) ){
+            return $this->redirect($this->generateUrl('fos_user_security_login'));
+        }
 
         $compte = $this->getDoctrine()
             ->getRepository('UserBundle:Compte')
@@ -83,7 +83,12 @@ class CompteController extends Controller
     }
 
     public function detailAction($id){
+
+        //verification de l'identification au compte
         $user = $this->container->get('security.context')->getToken()->getUser();
+        if (!is_object($user) ){
+            return $this->redirect($this->generateUrl('fos_user_security_login'));
+        }
         $compte = $this->getDoctrine()
             ->getRepository('UserBundle:Compte')
             ->find($id);
@@ -131,10 +136,15 @@ class CompteController extends Controller
 
     public function creerAction(Request $request)
     {
-        // crée une tâche et lui donne quelques données par défaut pour cet exemple
+
+
+        //verification de l'identification au compte
+        $user = $this->container->get('security.context')->getToken()->getUser();
+        if (!is_object($user) ){
+            return $this->redirect($this->generateUrl('fos_user_security_login'));
+        }
         $compte = new Compte();
         $compte->setActif('1');
-        $user = $this->container->get('security.context')->getToken()->getUser();
         $compte->setUser($user);
 
 
@@ -159,6 +169,12 @@ class CompteController extends Controller
     }
 
     public function modifAction($id){
+
+        //verification de l'identification au compte
+        $user = $this->container->get('security.context')->getToken()->getUser();
+        if (!is_object($user) ){
+            return $this->redirect($this->generateUrl('fos_user_security_login'));
+        }
         $compte = $this->getDoctrine()
             ->getRepository('UserBundle:Compte')
             ->find($id);
@@ -203,6 +219,12 @@ class CompteController extends Controller
 
     public function supprAction($id)
     {
+        $user = $this->container->get('security.context')->getToken()->getUser();
+        if (!is_object($user) ){
+            return $this->redirect($this->generateUrl('fos_user_security_login'));
+        }
+
+        //verification de l'identification au compte
         $compte = $this->getDoctrine()
             ->getRepository('UserBundle:Compte')
             ->find($id);
