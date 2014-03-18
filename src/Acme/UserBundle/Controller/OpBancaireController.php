@@ -68,7 +68,7 @@ class OpBancaireController extends Controller
         ));
     }
 
-    public function supprAction($id)
+    public function supprAction($id , $idcompte)
     {
         //verification de l'identification au compte
         $user = $this->container->get('security.context')->getToken()->getUser();
@@ -91,6 +91,7 @@ class OpBancaireController extends Controller
         $em->remove($operation);
         $em->flush();
 
-        return $this->redirect($this->generateUrl('montrerCompte'));
+        return $this->redirect($this->generateUrl('detailCompte', array( 'id'=>$idcompte)));
+
     }
 }
