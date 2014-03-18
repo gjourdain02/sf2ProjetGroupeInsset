@@ -17,3 +17,10 @@ body {
 .color_debit {
 	color:#ce2020;
 }
+.margin-top {
+	margin-top: 40px;
+}
+	#logo {
+		margin:-40px auto 40px auto;
+		display:block;
+	}
