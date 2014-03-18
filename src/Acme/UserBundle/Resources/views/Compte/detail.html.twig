@@ -9,11 +9,11 @@
                 {{ compte.nom }} {{ compte.numeroCompte }} {{solde}}
 
                 {% if passeuil %}
-                <a href="{{ path('creerSeuil', {'id' : compte.id} )}}"  >
-                    Pas de seuil associez </a>
+                    <a href="{{ path('creerSeuil', {'id' : compte.id} )}}"  >
+                        Pas de seuil associez</a>
                 {% else %}
                     <a href="{{ path('modifSeuil', {'id' : seuil.id} )}}"  >
-                        Seuil : {{ seuil.seuil }} </a>
+                        Seuil : {{ seuil.seuil }}</a>
                 {% endif %}
 
                 <a href="{{ path('creerOperation', {'id' : compte.id} )}}" class="close confirm-del-fiche" ><span class="glyphicon glyphicon-plus"></span>
@@ -26,9 +26,7 @@
                     <tr>
                         <th>Nom</th>
                         <th>Montant</th>
-
                         <th>Supprimer</th>
-
                     </tr>
 
                     {% for operation in operations %}
@@ -56,5 +54,4 @@
             </div>
         </div>
     </div>
-
 {% endblock %}

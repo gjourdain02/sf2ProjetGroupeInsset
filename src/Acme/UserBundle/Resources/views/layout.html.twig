@@ -1,74 +1,56 @@
 {% extends "::base.html.twig" %}
 {% block javascripts %}
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    {% javascripts
-
-    '@PinanoBootstrap3Bundle/Resources/public/js/bootstrap.js'
-
-    %}
-    <script src="{{ asset_url }}"></script>
-    {% endjavascripts %}
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	{% javascripts
+		'@PinanoBootstrap3Bundle/Resources/public/js/bootstrap.js'
+	%}
+	<script src="{{ asset_url }}"></script>
+	{% endjavascripts %}
 {% endblock %}
 
 {% block stylesheets %}
-    {% stylesheets filter='cssrewrite'
-
-    'bundles/pinanobootstrap3/css/bootstrap.css'
-    'bundles/pinanobootstrap3/css/bootstrap-theme.css'
-
-    'bundles/yourawesomebundle/css/awesomestylesheet.css'
-
-    'bundles/user/css/style.css'
-
-    %}
-    <link rel="stylesheet" href="{{ asset_url }}" />
-    {% endstylesheets %}
+	{% stylesheets filter='cssrewrite'
+		'bundles/pinanobootstrap3/css/bootstrap.css'
+		'bundles/pinanobootstrap3/css/bootstrap-theme.css'
+		'bundles/yourawesomebundle/css/awesomestylesheet.css'
+		'bundles/user/css/style.css'
+	%}
+	<link rel="stylesheet" href="{{ asset_url }}" />
+	{% endstylesheets %}
 {% endblock %}
 
 {% block title %}Giltin{% endblock %}
 
 {% block body %}
-
-
-    <nav class="navbar navbar-default " role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="{{ path('index') }}">Giltin</a>
-            </div>
-
-            <ul class=" nav navbar-nav">
-
-                <li>
-                    <a href="{{ path('montrerCompte') }}" class="navbar-link">Mes comptes</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-
-                    <li>
-                        <a href="{{ path('fos_user_security_logout') }}">
-                            {{ 'Deconnexion'|trans({}, 'FOSUserBundle') }}
-                        </a>
-                    </li>
-                {% else %}
-                    <li>
-                        <a href="{{ path('fos_user_registration_register') }}">{{ "S'inscrire"|trans({}, 'FOSUserBundle') }}</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('fos_user_security_login') }}">{{ 'Connexion'|trans({}, 'FOSUserBundle') }}</a>
-                    </li>
-                {% endif %}
-
-
-
-            </ul>
-        </div>
-    </nav>
-
-
-    {% block contenu %}
-
-        {% block fos_user_content %}{% endblock %}
-    {% endblock %}
-
+	<nav class="navbar navbar-default " role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="{{ path('index') }}">Giltin</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="{{ path('montrerCompte') }}" class="navbar-link">Mes comptes</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+					<li>
+						<a href="{{ path('fos_user_security_logout') }}">
+							{{ 'Deconnexion'|trans({}, 'FOSUserBundle') }}
+						</a>
+					</li>
+				{% else %}
+					<li>
+						<a href="{{ path('fos_user_registration_register') }}">{{ "S'inscrire"|trans({}, 'FOSUserBundle') }}</a>
+					</li>
+					<li>
+						<a href="{{ path('fos_user_security_login') }}">{{ 'Connexion'|trans({}, 'FOSUserBundle') }}</a>
+					</li>
+				{% endif %}
+			</ul>
+		</div>
+	</nav>
+	{% block contenu %}
+		{% block fos_user_content %}{% endblock %}
+	{% endblock %}
 {% endblock %}
