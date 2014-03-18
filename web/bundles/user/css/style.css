@@ -1,5 +1,5 @@
 body {
-	background-image:url('img/bg.png');
+	background-image:url('../img/bg.png');
 }
 .close {
     float:left;
@@ -10,4 +10,10 @@ body {
 	background-color:#fff;
 	border-radius:4px;
 	border-bottom:2px solid #c5c5c5;
+}
+.color_credit {
+	color:#11c71e;
+}
+.color_debit {
+	color:#ce2020;
 }
