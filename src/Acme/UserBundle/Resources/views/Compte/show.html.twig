@@ -32,13 +32,9 @@
                                     <td>{{ compte.numeroCompte }}</td>
                                     <td>
                                         {% if soldeOp[loop.index-1]['solde'] >= 0  %}
-                                            <span class="color_credit">
-									        {{ soldeOp[loop.index-1]['solde'] }}
-                                        </span>
+                                            <span class="color_credit">{{ soldeOp[loop.index-1]['solde'] }}</span>
                                         {% else %}
-                                            <span class="color_debit">
-                                            {{ soldeOp[loop.index-1]['solde'] }}
-                                            </span>
+                                            <span class="color_debit">{{ soldeOp[loop.index-1]['solde'] }}</span>
                                         {% endif %}
                                     </td>
                                     <td>
