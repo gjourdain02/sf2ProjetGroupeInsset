@@ -20,7 +20,11 @@ class SeuilController extends Controller
      * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
     public function creerAction(Request $request, $id){
+        //verification de l'identification au compte
         $user = $this->container->get('security.context')->getToken()->getUser();
+        if (!is_object($user) ){
+            return $this->redirect($this->generateUrl('fos_user_security_login'));
+        }
 
         $repository = $this->getDoctrine()
             ->getRepository('UserBundle:Compte');
@@ -31,8 +35,7 @@ class SeuilController extends Controller
 
         if ($request->isMethod('POST')) {
             $form->bind($request);
-            //if ($form->isValid()) {
-            // fait quelque chose comme sauvegarder la tâche dans la bdd
+
             $em = $this->getDoctrine()->getManager();
             $reg = $form->getData();
 
@@ -56,11 +59,16 @@ class SeuilController extends Controller
      * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
      */
     public function modifAction($id){
+
+        //verification de l'identification au compte
+        $user = $this->container->get('security.context')->getToken()->getUser();
+        if (!is_object($user) ){
+            return $this->redirect($this->generateUrl('fos_user_security_login'));
+        }
+
         $seuil = $this->getDoctrine()
             ->getRepository('UserBundle:Seuil')
             ->find($id);
-
-
 
         if (!$seuil)
         {
@@ -70,8 +78,6 @@ class SeuilController extends Controller
         }
 
         $form = $this->createForm(new SeuilType(), $seuil);
-
-
         $request = $this->get('request');
         if ($request->getMethod() == 'POST')
         {
