@@ -20,7 +20,13 @@ body {
 .margin-top {
 	margin-top: 40px;
 }
-	#logo {
-		margin:-40px auto 40px auto;
-		display:block;
-	}
+#logo {
+	margin:-40px auto 40px auto;
+	display:block;
+}
+.no-border {
+	padding:0;
+}
+.table {
+	margin-bottom:0;
+}
