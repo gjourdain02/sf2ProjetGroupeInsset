@@ -2,53 +2,63 @@
 
 {% block title %}Gitlin - Comptes Bancaires{% endblock %}
 {% block contenu %}
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				{% for flashMessage in app.session.flashbag.get('pasSonCompte') %}
-					<div class="flash-notice">
-						{{ flashMessage }}
-					</div>
-				{% endfor %}
-				{% if pasCompte %}
-					<a href="{{ path('creerCompte') }}" class="close confirm-del-fiche">Vous n'avez pas encore de compte bancaires.</a>
-				{% else %}
-					<a href="{{ path('creerCompte') }}" class="close confirm-del-fiche" title="Ajouter une opération bancaire"><span class="glyphicon glyphicon-plus"></a><br /><br />
-					<table class="table">
-						<tr>
-							<th style="width: 30%;">Nom</th>
-							<th style="width: 20%;">Numéro</th>
-							<th style="width: 20%;">Solde</th>
-							<th style="width: 10%;">Supprimer</th>
-							<th style="width: 10%;">Modifier</th>
-							<th style="width: 10%;">Détails</th>
-						</tr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {% for flashMessage in app.session.flashbag.get('pasSonCompte') %}
+                    <div class="flash-notice">
+                        {{ flashMessage }}
+                    </div>
+                {% endfor %}
+                {% if pasCompte %}
+                    <a href="{{ path('creerCompte') }}" class="close confirm-del-fiche">Vous n'avez pas encore de compte bancaires.</a>
+                {% else %}
+                    <a href="{{ path('creerCompte') }}" class="close confirm-del-fiche" title="Ajouter une opération bancaire"><span class="glyphicon glyphicon-plus"></a><br /><br />
+                    <table class="table">
+                        <tr>
+                            <th style="width: 30%;">Nom</th>
+                            <th style="width: 20%;">Numéro</th>
+                            <th style="width: 20%;">Solde</th>
+                            <th style="width: 10%;">Supprimer</th>
+                            <th style="width: 10%;">Modifier</th>
+                            <th style="width: 10%;">Détails</th>
+                        </tr>
 
-						{% for compte in comptes %}
-							{% if compte.actif == 1 %}
-								<tr>
-									<td><a href="{{ path('detailCompte', {'id' : compte.id} )}}">{{ compte.nom }} - {{loop.index - 1}}</a></td>
-									<td>{{ compte.numeroCompte }}</td>
-									<!-- si le solde est positif ou null mettre un span avec la class color_credit sinon mettre la class color_debit -->
-									<td>{{ soldeOp[loop.index-1]['solde'] }}</td>
-									<td>
-										<a href="{{ path('supprCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-remove-circle"></span>
-										</a>
-									</td>
-									<td>
-										<a href="{{ path('modifCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-wrench"></span>
-										</a>
-									</td>
-									<td>
-										<a href="{{ path('detailCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-list-alt"></span>
-										</a>
-									</td>
-								</tr>
-							{% endif %}
-						{% endfor %}
-					</table>
-				{% endif %}
-			</div>
-		</div>
-	</div>
+                        {% for compte in comptes %}
+                            {% if compte.actif == 1 %}
+
+                                <tr>
+                                    <td><a href="{{ path('detailCompte', {'id' : compte.id} )}}">{{ compte.nom }} - {{loop.index - 1}}</a></td>
+                                    <td>{{ compte.numeroCompte }}</td>
+                                    <td>
+                                        {% if soldeOp[loop.index-1]['solde'] >= 0  %}
+                                            <span class="color_credit">
+									        {{ soldeOp[loop.index-1]['solde'] }}
+                                        </span>
+                                        {% else %}
+                                            <span class="color_debit">
+                                            {{ soldeOp[loop.index-1]['solde'] }}
+                                            </span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        <a href="{{ path('supprCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-remove-circle"></span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="{{ path('modifCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-wrench"></span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="{{ path('detailCompte', {'id' : compte.id} )}}" class="close confirm-del-fiche"><span class="glyphicon glyphicon-list-alt"></span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            {% endif %}
+                        {% endfor %}
+                    </table>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 {% endblock %}

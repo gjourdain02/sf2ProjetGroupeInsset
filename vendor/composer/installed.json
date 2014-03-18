@@ -686,26 +686,25 @@
     },
     {
         "name": "symfony/icu",
-        "version": "v1.2.0",
-        "version_normalized": "1.2.0.0",
+        "version": "v1.0.0",
+        "version_normalized": "1.0.0.0",
         "target-dir": "Symfony/Component/Icu",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/Icu.git",
-            "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72"
+            "reference": "cac3fdfb111adbe590155f491594636d45129783"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Icu/zipball/7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
-            "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
+            "url": "https://api.github.com/repos/symfony/Icu/zipball/cac3fdfb111adbe590155f491594636d45129783",
+            "reference": "cac3fdfb111adbe590155f491594636d45129783",
             "shasum": ""
         },
         "require": {
-            "lib-icu": ">=4.4",
             "php": ">=5.3.3",
             "symfony/intl": "~2.3"
         },
-        "time": "2013-06-03 18:32:58",
+        "time": "2013-06-03 18:32:07",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1081,12 +1080,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-            "reference": "9b8bbbcf50620f7c8af9c7588d9fe29247c2fa42"
+            "reference": "f8e9255eedc91bc53195de288c9fe640719b2817"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/9b8bbbcf50620f7c8af9c7588d9fe29247c2fa42",
-            "reference": "9b8bbbcf50620f7c8af9c7588d9fe29247c2fa42",
+            "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/f8e9255eedc91bc53195de288c9fe640719b2817",
+            "reference": "f8e9255eedc91bc53195de288c9fe640719b2817",
             "shasum": ""
         },
         "require": {
@@ -1106,7 +1105,7 @@
         "suggest": {
             "willdurand/propel-typehintable-behavior": "Needed when using the propel implementation"
         },
-        "time": "2014-03-16 19:14:47",
+        "time": "2014-03-18 08:55:34",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
