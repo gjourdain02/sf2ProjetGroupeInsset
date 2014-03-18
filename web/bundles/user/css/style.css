@@ -30,3 +30,10 @@ body {
 .table {
 	margin-bottom:0;
 }
+.container-block {
+	box-shadow:none;
+	border:none;
+	background-color:#fff;
+	border-radius:4px;
+	border-bottom:2px solid #c5c5c5;
+}
