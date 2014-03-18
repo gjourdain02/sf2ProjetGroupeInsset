@@ -2,24 +2,26 @@
 
 {% block title %}Gitlin - {{ compte.nom }}{% endblock %}
 {% block contenu %}
-
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				{{ compte.nom }} {{ compte.numeroCompte }} {{solde}}
 
 				{% if passeuil %}
 					<a href="{{ path('creerSeuil', {'id' : compte.id} )}}"  >
-						Pas de seuil associez</a>
+						Pas de seuil associez
+					</a>
 				{% else %}
 					<a href="{{ path('modifSeuil', {'id' : seuil.id} )}}"  >
-						Seuil : {{ seuil.seuil }}</a>
+						Seuil : {{ seuil.seuil }}
+					</a>
 				{% endif %}
 
 				<a href="{{ path('creerOperation', {'id' : compte.id} )}}" class="close confirm-del-fiche" ><span class="glyphicon glyphicon-plus"></span>
 				</a>
 			</div>
 		</div>
+		<br />
 		<div class="row">
 			<div class="col-md-12">
 				<table class="table">
@@ -28,26 +30,20 @@
 						<th>Montant</th>
 						<th>Supprimer</th>
 					</tr>
-
 					{% for operation in operations %}
-
 						<tr>
 							<td>{{ operation.nom }}</td>
 							<td>
 							{% if operation.type %}
-								+
+								<span class="color_credit">+ {{ operation.montant }}</span>
 							{% else %}
-								-
+								<span class="color_debit">- {{ operation.montant }}</span>
 							{% endif %}
-							{{ operation.montant }}</td>
-
-
+							</td>
 							<td>
 								<a href="{{ path('supprOperation', {'id' : operation.id , 'idcompte' : compte.id} )}}" class="close confirm-del-fiche" ><span class="glyphicon glyphicon-remove-circle"></span>
 								</a>
 							</td>
-
-
 						</tr>
 					{% endfor %}
 				</table>
