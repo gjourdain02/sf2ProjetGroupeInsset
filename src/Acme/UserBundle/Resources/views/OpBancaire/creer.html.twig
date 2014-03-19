@@ -1,36 +1,36 @@
 {% extends "UserBundle::layout.html.twig" %}
 
-
 {% block contenu %}
-    <div class="container">
-    <div class="panel panel-info" >
-    <div class="panel-heading"> Creation d'un nouveau compte bancaire </div>
-    <form name="acme_userbundle_opbancairetype" method="post" action="">
-        <div id="acme_userbundle_opbancairetype">
-            <div class="panel-body">
-                <div>
-                    <label for="acme_userbundle_opbancairetype_nom" class="required">Nom</label>
-                    <input type="text" id="acme_userbundle_opbancairetype_nom" name="acme_userbundle_opbancairetype[nom]" required="required" />
-                </div>
-                <div>
-                    <label for="acme_userbundle_opbancairetype_montant" class="required">Montant</label>
-                    <input type="text" id="acme_userbundle_opbancairetype_montant" name="acme_userbundle_opbancairetype[montant]" required="required" />
-                </div>
-                <div>
-                    {{ form_row(form.categories) }}
-                </div>
-                <div>
-                    {{ form_row(form.type) }}
-                </div>
-            </div>
-            <div class="panel-footer">
-                <div>
-                    <button type="submit" id="acme_userbundle_opbancairetype_save" name="acme_userbundle_opbancairetype[save]">Save</button>
-                </div>
-                {{ form_row(form._token) }}
-            </div>
-        </div>
-    </form>
-
-
+	<div class="container">
+		<div class="panel panel-default container-block">
+			<div class="panel-heading">Creation d'un nouveau compte bancaire</div>
+				<form name="acme_userbundle_opbancairetype" method="post" action="">
+					<div id="acme_userbundle_opbancairetype">
+						<div class="panel-body">
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-font"></span></span>
+								<input type="text" id="acme_userbundle_opbancairetype_nom" class="form-control" name="acme_userbundle_opbancairetype[nom]" required="required" placeholder="Nom" />
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
+								<input type="text" id="acme_userbundle_opbancairetype_montant" class="form-control" name="acme_userbundle_opbancairetype[montant]" required="required" placeholder="Montant" />
+							</div>
+							<div class="input-group">
+								{{ form_row(form.categories) }}
+							</div>
+							<div class="input-group">
+								{{ form_row(form.type) }}
+							</div>
+						</div>
+						<div class="panel-footer">
+							<div>
+								<button type="submit" id="acme_userbundle_opbancairetype_save" class="btn btn-default" name="acme_userbundle_opbancairetype[save]">Enregistrer</button>
+							</div>
+							{{ form_row(form._token) }}
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 {% endblock %}
