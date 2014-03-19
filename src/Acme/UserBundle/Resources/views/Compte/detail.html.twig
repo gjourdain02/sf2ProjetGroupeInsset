@@ -46,11 +46,11 @@
 					</div>
 					<div class="panel-body">
 						<div class="btn-group">
-							<button class="btn btn-default"><a href="{{ path('creerOperation', {'id' : compte.id} )}}"><span class="glyphicon glyphicon-plus"></span>&nbsp;Ajouter op</a></button>
+							<a href="{{ path('creerOperation', {'id' : compte.id} )}}" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>&nbsp;Ajouter op</a>
 							{% if passeuil %}
-								<button class="btn btn-default"><a href="{{ path('creerSeuil', {'id' : compte.id} )}}">Aucun seuil</a></button>
+								<a href="{{ path('creerSeuil', {'id' : compte.id} )}}" class="btn btn-default">Aucun seuil</a>
 							{% else %}
-								<button class="btn btn-default"><a href="{{ path('modifSeuil', {'id' : seuil.id} )}}">Seuil : {{ seuil.seuil }}</a></button>
+								<a href="{{ path('modifSeuil', {'id' : seuil.id} )}}" class="btn btn-default">Seuil : {{ seuil.seuil }}</a>
 							{% endif %}
 						</div><br /><br />
 						{{ compte.nom }}<br />
