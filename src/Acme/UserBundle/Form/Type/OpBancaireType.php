@@ -16,7 +16,7 @@ class OpBancaireType extends AbstractType{
             ->add('categories', 'entity', array(
                 'class' => 'UserBundle:Categorie',
                 'property' => 'nom',
-                'multiple' => true,
+                'multiple' => false,
                 'expanded' => false
 
             ));

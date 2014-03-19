@@ -233,7 +233,9 @@ class OperationBancaire
      * @param \Acme\UserBundle\Entity\Categorie $categories
      * @return OperationBancaire
      */
-    public function addCategory(\Acme\UserBundle\Entity\Categorie $categories)
+
+
+    public function setCategories(\Acme\UserBundle\Entity\Categorie $categories)
     {
         $this->categories[] = $categories;
 
