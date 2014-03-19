@@ -4,49 +4,66 @@
 {% block contenu %}
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				{{ compte.nom }} {{ compte.numeroCompte }} {{solde}}
-
-				{% if passeuil %}
-					<a href="{{ path('creerSeuil', {'id' : compte.id} )}}"  >
-						Pas de seuil associez
-					</a>
-				{% else %}
-					<a href="{{ path('modifSeuil', {'id' : seuil.id} )}}"  >
-						Seuil : {{ seuil.seuil }}
-					</a>
-				{% endif %}
-
-				<a href="{{ path('creerOperation', {'id' : compte.id} )}}" class="close confirm-del-fiche" ><span class="glyphicon glyphicon-plus"></span>
-				</a>
+			<div class="col-md-9">
+				<div class="panel panel-default container-block">
+					<div class="panel-heading">
+						<h3 class="panel-title">Informations</h3>
+					</div>
+					<div class="panel-body no-border">
+						<table class="table remove-border">
+							<tr>
+								<th>Nom</th>
+								<th>Montant</th>
+								<th>Modifier</th>
+								<th>Supprimer</th>
+							</tr>
+							{% for operation in operations %}
+								<tr>
+									<td>{{ operation.nom }}</td>
+									<td>
+									{% if operation.type %}
+										<span class="color_credit">+ {{ operation.montant }} €</span>
+									{% else %}
+										<span class="color_debit">- {{ operation.montant }} €</span>
+									{% endif %}
+									</td>
+									<td>
+										<a href="#" class="close confirm-del-fiche" title="Modifier"><span class="glyphicon glyphicon-edit"></span></a>
+									</td>
+									<td>
+										<a href="{{ path('supprOperation', {'id' : operation.id , 'idcompte' : compte.id} )}}" class="close confirm-del-fiche" title="Supprimer"><span class="glyphicon glyphicon-remove-circle"></span></a>
+									</td>
+								</tr>
+							{% endfor %}
+						</table>
+					</div>
+				</div>
 			</div>
-		</div>
-		<br />
-		<div class="row">
-			<div class="col-md-12">
-				<table class="table">
-					<tr>
-						<th>Nom</th>
-						<th>Montant</th>
-						<th>Supprimer</th>
-					</tr>
-					{% for operation in operations %}
-						<tr>
-							<td>{{ operation.nom }}</td>
-							<td>
-							{% if operation.type %}
-								<span class="color_credit">+ {{ operation.montant }}</span>
+			<div class="col-md-3">
+				<div class="panel panel-default container-block">
+					<div class="panel-heading">
+						<h3 class="panel-title">Informations</h3>
+					</div>
+					<div class="panel-body">
+						<div class="btn-group">
+							<button class="btn btn-default"><a href="{{ path('creerOperation', {'id' : compte.id} )}}"><span class="glyphicon glyphicon-plus"></span>&nbsp;Ajouter op</a></button>
+							{% if passeuil %}
+								<button class="btn btn-default"><a href="{{ path('creerSeuil', {'id' : compte.id} )}}">Aucun seuil</a></button>
 							{% else %}
-								<span class="color_debit">- {{ operation.montant }}</span>
+								<button class="btn btn-default"><a href="{{ path('modifSeuil', {'id' : seuil.id} )}}">Seuil : {{ seuil.seuil }}</a></button>
 							{% endif %}
-							</td>
-							<td>
-								<a href="{{ path('supprOperation', {'id' : operation.id , 'idcompte' : compte.id} )}}" class="close confirm-del-fiche" ><span class="glyphicon glyphicon-remove-circle"></span>
-								</a>
-							</td>
-						</tr>
-					{% endfor %}
-				</table>
+						</div><br /><br />
+						{{ compte.nom }}<br />
+						N° : {{ compte.numeroCompte }}<br />
+						Solde :
+						{% if solde>=0 %}
+							<span class="color_credit">{{ solde }} €</span>
+						{% else %}
+							<span class="color_debit">{{ solde }} €</span>
+						{% endif %}
+						<br />
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

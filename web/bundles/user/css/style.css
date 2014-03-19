@@ -1,8 +1,19 @@
 body {
 	background-image:url('../img/bg.png');
 }
+.navbar {
+	box-shadow:none;
+	background-image:none;
+	background-color:#fff;
+	border:none;
+	border-bottom:2px solid #b5b5b5;
+	border-radius:0 0 6px 6px;
+}
+	.navbar a {
+		color:#fff;
+	}
 .close {
-    float:left;
+	float:left;
 }
 .container-block {
 	box-shadow:none;
@@ -16,4 +27,36 @@ body {
 }
 .color_debit {
 	color:#ce2020;
+}
+.margin-top {
+	margin-top: 40px;
+}
+#logo {
+	margin:-40px auto 40px auto;
+	display:block;
+}
+.no-border {
+	padding:0;
+}
+.remove-border {
+	margin-top:-1px;
+}
+.table {
+	margin-bottom:0;
+}
+.container-block {
+	box-shadow:none;
+	border:none;
+	background-color:#fff;
+	border-radius:4px;
+	border-bottom:2px solid #c5c5c5;
+}
+.panel-heading {
+	background-image:none !important;
+	color:#333;
+	background-color:#f5f5f5;
+	border-color:#ddd;
+}
+button a {
+	color:#333;
 }
