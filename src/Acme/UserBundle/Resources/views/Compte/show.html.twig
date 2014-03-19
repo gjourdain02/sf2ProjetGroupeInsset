@@ -15,7 +15,7 @@
 						<h3 class="panel-title">Liste de vos comptes</h3>
 					</div>
 					<div class="panel-body no-border">
-						<table class="table">
+						<table class="table remove-border">
 							{% if pasCompte %}
 								<tr><td><b>Vous n'avez pas encore de compte bancaires.</b></td></tr>
 							{% else %}
@@ -34,9 +34,9 @@
 											<td>{{ compte.numeroCompte }}</td>
 											<td>
 												{% if soldeOp[loop.index-1]['solde'] >= 0  %}
-													<span class="color_credit">{{ soldeOp[loop.index-1]['solde'] }}</span>
+													<span class="color_credit">{{ soldeOp[loop.index-1]['solde'] }} €</span>
 												{% else %}
-													<span class="color_debit">{{ soldeOp[loop.index-1]['solde'] }}</span>
+													<span class="color_debit">{{ soldeOp[loop.index-1]['solde'] }} €</span>
 												{% endif %}
 											</td>
 											<td>
